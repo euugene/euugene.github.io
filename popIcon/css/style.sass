@@ -4,7 +4,7 @@ body
     max-width: 400px
     margin: 0 auto 
     background: rgba(46, 46, 46, 0.5)
-button, button:active, button:focus 
+button, button:focus 
     outline: none
 
 #order-bg__info::before 
@@ -21,8 +21,36 @@ button, button:active, button:focus
     background: #D1223E
     border-radius: 16px 16px  0 0 
     padding: 0 0 35px 0
+
+.close 
+//   position: absolute
+  right: 370px
+  top: 15px
+  width: 25px
+  height: 25px
+  opacity: 0.3
+  color: #E6E6E6
+
+.close:hover 
+  opacity: 1
+
+.close:before, .close:after 
+  position: absolute
+  left: 15px
+  content: ' '
+  height: 33px
+  width: 2px
+  background-color: #333
+
+.close:before 
+  transform: rotate(45deg)
+
+.close:after 
+  transform: rotate(-45deg)
+
 .order
-    margin: 20px 0 0 0
+    margin: 50px 0 0 0
+   
     &-bg
         position: relative
         background-image: url(../img/bg1-img.svg) 
@@ -46,22 +74,56 @@ button, button:active, button:focus
         font-weight: 600
         font-size: 26px
         padding: 40px 0 30px 0
+        margin-left: -20px
     button
         margin: 30px 0 30px 0
-        color: red
+        color: white
         background-color: transparent
         border: 1px solid #E72E4D
-        box-sizing: border-box
+        // box-sizing: border-box
         border-radius: 25px
-        width: 226px
-        height: 45px
+        // width: 226px
+        // height: 45px
         font-family: 'Montserrat', sans-serif
         font-weight: 600
-   
+        
+        
+        width: 226px
+        height: 45px
+        position: relative
+        overflow: hidden
+        cursor: pointer
+        color: white
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .4)
+        background: #E72E4D
+    button:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 5px
+        height: 5px
+        background: rgba(255, 255, 255, .5)
+        opacity: 0
+        border-radius: 100%
+        transform: scale(1, 1) translate(-50%)
+        transform-origin: 50% 50%
+    @keyframes ripple 
+        0% 
+            transform: scale(0, 0)
+            opacity: 1 
+        20% 
+            transform: scale(25, 25)
+            opacity: 1 
+        100% 
+            opacity: 0
+            transform: scale(40, 40)
+    button:focus:not(:active)::after 
+        animation: ripple 1s ease-out
+
+
     a 
         font-size: 12px
-    // button::-moz-focus-inner 
-    //     border: 0
 
     &-detal
         font-size: 20px
@@ -88,9 +150,20 @@ button, button:active, button:focus
 
 @media only screen and (max-width : 420px)
     body
-        padding: 0 20px      
+        padding: 0 20px
+    .order-bg ul li:first-child
+        font-size: 22px 
+    .order-list2 li:nth-child(3) 
+        padding: 20px 0 0 0
+    .order-list2 li:last-child 
+        padding: 20px 0 0 0
+    .order-list2 li 
+        margin: 0 0 0 -20px
+        // margin: 0 0 0 -20px
 @media only screen and (max-width : 520px)
     body
-        padding: 0 20px  
+        padding: 0 20px 
+    .order-bg ul li:first-child
+        font-size: 19px  
 
         

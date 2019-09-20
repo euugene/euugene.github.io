@@ -136,22 +136,22 @@ body {
 
 .details-about li {
   padding: 10px 0 0 0;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 30px;
 }
 
 .details-about2 li {
   padding: 10px 0 0 0;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 10px;
 }
 
 .details-info li {
   padding: 10px 0 0 0;
-  margin: 0 0 0 -25px;
+  margin: 0 0 0 -35px;
 }
 
 .details-info2 li {
   padding: 10px 0 0 0;
-  margin: 0 0 0 -25px;
+  margin: 0 0 0 -45px;
 }
 
 .details-about ul:nth-child(1) {
@@ -340,6 +340,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .order-bg-sec {
+    padding-bottom: 30px;
+  }
   .order-bg ul li:first-child {
     margin: 0 0 0 -10%;
   }
@@ -365,7 +368,7 @@ body {
     width: 110%;
   }
   .details-about2 li {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 30px;
   }
   .details-info li {
     margin: 0 0 0 -25px;
@@ -417,14 +420,24 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer-list-bg {
-    margin: 20px 0 0 0;
-  }
   .footer-list__btn {
     margin: 0 0 0 10px;
   }
   .footer-contacts-info {
     margin: 0 auto;
+  }
+  .footer-list-bg {
+    margin: 20px 0 0 20px;
+  }
+  .footer-list__answers {
+    margin-left: 20px;
+  }
+  .footer-contacts__info {
+    margin-left: -25px;
+    text-align: center;
+  }
+  .footer-contacts__social {
+    margin-left: 55px;
   }
 }
 
@@ -459,6 +472,19 @@ body {
   .order-rect {
     margin: 0 0 0 -3%;
   }
+  .footer-list__answers {
+    margin-left: 40px;
+  }
+  .footer-contacts__info {
+    margin-left: -15px;
+    text-align: center;
+  }
+  .footer-contacts__social {
+    margin-left: 85px;
+  }
+  .footer-list-bg {
+    margin-left: 45px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -473,6 +499,38 @@ body {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .footer-list__answers {
+    margin-left: 20px;
+  }
+  .footer-contacts__info {
+    margin-left: -20px;
+    text-align: center;
+  }
+  .footer-contacts__social {
+    margin-left: 65px;
+  }
+  .footer-list-bg {
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer-list__answers {
+    margin-left: 10px;
+  }
+  .footer-contacts__info {
+    margin-left: -20px;
+    text-align: center;
+  }
+  .footer-contacts__social {
+    margin-left: 65px;
+  }
+  .footer-list-bg {
+    margin-left: 15px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .order-bg ul li:first-child {
     margin: 0 0 0 -15%;
@@ -482,6 +540,19 @@ body {
   }
   .order-rect {
     margin: 0 0 0 -3%;
+  }
+  .footer-list__answers {
+    margin-left: -10px;
+  }
+  .footer-contacts__info {
+    margin-left: -20px;
+    text-align: center;
+  }
+  .footer-contacts__social {
+    margin-left: 35px;
+  }
+  .footer-list-bg {
+    margin-left: -5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
