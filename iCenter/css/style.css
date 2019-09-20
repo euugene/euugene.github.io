@@ -451,6 +451,10 @@ button, button:focus {
     margin: 0 0 0 -25px;
     font-size: 10px;
   }
+  .address-list__first span {
+    margin-left: 0px;
+    font-size: 16px;
+  }
   .my-about2 {
     margin: -3px 0 0 0;
   }

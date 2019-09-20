@@ -28,6 +28,15 @@ button, button:focus {
   padding: 0 0 35px 0;
 }
 
+.close {
+  right: 370px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.3;
+  color: #E6E6E6;
+}
+
 .close:hover {
   opacity: 1;
 }
