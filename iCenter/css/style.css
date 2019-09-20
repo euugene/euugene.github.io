@@ -328,7 +328,7 @@ button, button:focus {
 }
 
 .footer button {
-  margin: 20px 0 20px 0;
+  margin: 30px 0 20px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -404,6 +404,12 @@ button, button:focus {
 .footer button:focus:not(:active)::after {
   -webkit-animation: ripple 1s ease-out;
           animation: ripple 1s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  -list__answers {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -504,7 +510,7 @@ button, button:focus {
     margin-left: 55px;
   }
   .footer button {
-    margin: 20px 0 20px 40px;
+    margin: 10px 0 20px 40px;
   }
 }
 
