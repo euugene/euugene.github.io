@@ -1,0 +1,80 @@
+/*---------------------------------------------------Navigaton Menu---------------------------------------------------*/
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-wrap {
+    background-color: #232323;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 280px;
+    margin-left: -280px;
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    transition: .25s;
+    z-index: 17;
+}
+
+.menu-show {
+    margin-left: 0;
+}
+
+.menu-sidebar {
+    margin: 75px 0 80px 10px;
+    position: relative;
+    top: 70px;
+}
+
+/*---------------------------------------------------Hamburger Button---------------------------------------------------*/
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    transition: .25s;
+    z-index: 18;
+    content: url("../img/menu_close.svg");
+    padding: 5px;
+}
+
+.toggle-button.button-open {
+    content: url("../img/menu_open.svg");
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.button-open {
+    left: 230px;
+}
+
+.menu.menu-mobile-li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.menu.menu-mobile-li li {
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+.menu.menu-mobile-li a{
+    font-size: 16px;
+    color: var(--main-text-color-white);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.logo.logo_mobile {
+    margin-top: 15px;
+    margin-left: 20px;
+}
