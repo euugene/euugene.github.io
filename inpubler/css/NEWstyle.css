@@ -2375,6 +2375,9 @@ padding-bottom: 64px
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
+	.yuldash .pabler-sec .row-eq-height :nth-child(10) .pabler-block {
+		margin-bottom: 47px;
+	}
 
 	.yuldash .our-service-sec {
 		padding-bottom: 80px;
