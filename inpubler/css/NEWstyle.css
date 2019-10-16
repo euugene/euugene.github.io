@@ -2369,7 +2369,7 @@ padding-bottom: 64px
 }
 
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
 	.yuldash .pabler-sec .pabler-cols {
 		display: flex !important;
 		flex: 0 0 100%;
