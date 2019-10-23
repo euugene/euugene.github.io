@@ -1,5 +1,5 @@
 body {
-  font-family: "SST", sans-serif;
+  font-family: "HelveticaNeueCyr-Light", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -42,6 +42,7 @@ button, button:active, button:focus {
 .firstnav ul li {
   color: white;
   padding: 5px 12px 6px 0;
+  font-size: 14px;
 }
 
 .secnav {
@@ -190,6 +191,7 @@ button, button:active, button:focus {
 .thirdnav-nav a {
   color: #000000;
   margin-left: 43px;
+  font-family: "HelveticaNeueCyr", sans-serif;
 }
 
 .thirdnav-nav li:nth-child(1) a {
@@ -226,6 +228,9 @@ button, button:active, button:focus {
   }
   .secnav-work, .secnav-plus, .secnav-setting {
     display: none;
+  }
+  .secnav-img img {
+    padding: 28px 0 26px;
   }
   .secnav-work, .secnav-plus {
     display: -webkit-box;
@@ -282,6 +287,9 @@ button, button:active, button:focus {
   .secnav-plus ul li, .secnav-setting ul li {
     font-size: 12px;
   }
+  .secnav-small.pos {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -290,7 +298,7 @@ button, button:active, button:focus {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
   .firstnav nav button.navbar-toggler.medium {
     display: none;
   }

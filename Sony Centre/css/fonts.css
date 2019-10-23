@@ -1,4 +1,13 @@
-@font-face {
+/* @font-face {
   font-family:"SST";
   src: url('../fonts/SST.ttf');
+} */
+@font-face {
+  font-family:"HelveticaNeueCyr-Light"; 
+  src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff');
+}
+
+@font-face {
+  font-family:"HelveticaNeueCyr"; 
+  src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff'); 
 }

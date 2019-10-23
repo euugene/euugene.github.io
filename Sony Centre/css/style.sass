@@ -1,5 +1,5 @@
 body
-    font-family: "SST", sans-serif
+    font-family: "HelveticaNeueCyr-Light", sans-serif
     font-size: 14px
     line-height: 18px
 ul li
@@ -24,8 +24,10 @@ button, button:active, button:focus
         color: white
         margin: 0 0 0 auto 
     ul li
+        // font-family: "HelveticaNeueCyr", sans-serif
         color: white
         padding: 5px 12px 6px 0
+        font-size: 14px
 .secnav
     background: #000000
     display: flex
@@ -113,6 +115,7 @@ button, button:active, button:focus
         a
             color: #000000
             margin-left: 43px
+            font-family: "HelveticaNeueCyr", sans-serif
         li:nth-child(1) a
             margin-left: 53px
             
@@ -138,6 +141,8 @@ button, button:active, button:focus
             padding: 0
         &-work, &-plus, &-setting
             display: none
+        &-img img
+            padding: 28px 0 26px
     .secnav 
         &-work, &-plus, 
             display: flex
@@ -176,12 +181,15 @@ button, button:active, button:focus
             margin: 0
             ul li
                 font-size: 12px
+        &-small.pos
+            // display: flex
+            margin-bottom: 20px
 @media only screen and (min-width : 375px)
     .firstnav
         nav button.navbar-toggler.mob
             display: none
 
-@media only screen and (max-width : 375px)
+@media only screen and (max-width : 374px)
     .firstnav
         nav button.navbar-toggler.medium
             display: none
