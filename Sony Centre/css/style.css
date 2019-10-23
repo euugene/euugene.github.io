@@ -292,13 +292,13 @@ button, button:active, button:focus {
   }
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 370px) {
   .firstnav nav button.navbar-toggler.mob {
     display: none;
   }
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 370px) {
   .firstnav nav button.navbar-toggler.medium {
     display: none;
   }
