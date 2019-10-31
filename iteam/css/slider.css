@@ -17,7 +17,8 @@
     border: 2px solid #FF2424;
     border-radius: 100px;
     outline: none;
-    background: #ffffff;
+	background: #ffffff;
+	display: block
 }
 .ui-slider .ui-slider-handle:hower{
     outline: none
@@ -83,8 +84,40 @@
 .slider-pos{
 	display: flex;
 }
+.slider__bord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 28%;
+	background: #D6DDEA;
+}
+.slider__thirdBord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 83.2%;
+	background: #D6DDEA;
+}
+.slider__secBord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 55.5%;
+	background: #D6DDEA;
+}
 .statuses__first{
-	margin-left: 6%;
+	
+	position: absolute;
+	margin-left: 2.2%;
 	font-size: 15px;
 	line-height: 18px;
 	color: #D6DDEA;
@@ -93,7 +126,8 @@
 }
 
 .statuses__sec{
-	margin-left: -36%;
+	position: absolute;
+	margin-left: 4%;
 	font-size: 15px;
 	line-height: 18px;
 	color: #D6DDEA;
