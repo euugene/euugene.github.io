@@ -1,0 +1,533 @@
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "SF Pro Display";
+}
+
+header {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
+.header__logo img {
+  width: 198px;
+  height: 50px;
+  margin: 49px 0 78px 0;
+}
+
+.header__title {
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 32px;
+  font-family: "SF Pro Display Bold";
+}
+
+.header__text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+.partners__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners__group-icentre {
+  background-image: url("/img/icenter.svg");
+  display: block;
+  width: 157px;
+  height: 32px;
+}
+
+.partners__group-icentre:hover {
+  background-image: url("/img/icenter_color.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.partners__group-scentre {
+  background-image: url("/img/Sony_centre.svg");
+  display: block;
+  width: 196px;
+  height: 30px;
+}
+
+.partners__group-scentre:hover {
+  background-image: url("/img/Sony_centre_color.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.partners__group-digy {
+  background-image: url("/img/Digy.svg");
+  display: block;
+  width: 169px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.partners__group-premium {
+  background-image: url("/img/premium_service.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 145px;
+  height: 55px;
+  margin-top: 10px;
+}
+
+.partners__group-premium:hover {
+  background-image: url("/img/premium_color.svg");
+  background-size: contain;
+}
+
+.partners__group-samsung {
+  background-image: url("/img/samsung.svg");
+  display: block;
+  margin-top: 20px;
+  width: 102px;
+  height: 49px;
+}
+
+.partners__group-samsung:hover {
+  background-image: url("/img/samsung_color.svg");
+}
+
+.partners__group-sony {
+  background-image: url("/img/sony.svg");
+  display: block;
+  margin-top: 30px;
+  width: 110px;
+  height: 62px;
+}
+
+.partners__group-sony:hover {
+  background-image: url("/img/sony_color.svg");
+}
+
+.join {
+  margin-top: 20px;
+}
+
+.join__title {
+  font-family: SF Pro Display;
+  font-size: 30px;
+  line-height: 39px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.join__text {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  line-height: 25px;
+  color: #373943;
+}
+
+.join__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.join__button button {
+  border: none;
+  border-radius: 5px;
+  width: 155px;
+  height: 45px;
+  background: #061653;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 18px 0 0;
+}
+
+.join__button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.join__button div span {
+  margin: 0 auto 0 0;
+  color: #FFFFFF;
+}
+
+.join__button-play {
+  margin: 9px 11px 10px 9px;
+}
+
+.join__button-apple {
+  margin: 5px 10px 9px 6px;
+}
+
+.join__button-load {
+  font-family: SF Pro Display;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.opportunities__main {
+  font-size: 30px;
+  line-height: 36px;
+  color: #161616;
+  margin-bottom: 20px;
+}
+
+.opportunities__img {
+  margin-top: 42px;
+}
+
+.opportunities__img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+  -moz-transform: scale(1.2, 1.2);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 550ms;
+}
+
+.opportunities__title {
+  margin: 24px 0 26px 0;
+  font-family: SF Pro Display;
+  font-size: 20px;
+  line-height: 24px;
+  color: #161616;
+  font-weight: 600;
+}
+
+.opportunities__text {
+  font-family: SF Pro Display;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: #161616;
+}
+
+.statuses__title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #161616;
+  padding-bottom: 12px;
+  margin-top: 87px;
+  margin-bottom: 16px;
+}
+
+.statuses__black {
+  margin-left: -15px;
+  background-image: url("../img/Mask Group_3.svg");
+  width: 282px;
+  height: 110px;
+}
+
+.statuses__black img:first-child {
+  margin-left: 40%;
+  padding-top: 10%;
+}
+
+.statuses__black img:nth-child(2) {
+  margin-left: 30%;
+  padding-top: 5%;
+}
+
+.statuses__black img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statuses__first {
+  margin-top: -80px;
+}
+
+.statuses__sec {
+  margin-left: -400px;
+  margin-top: -80px;
+}
+
+.statuses__plat {
+  background-image: url("../img/Mask Group_4.svg");
+  width: 255px;
+  height: 110px;
+}
+
+.statuses__plat img {
+  position: relative;
+  margin: 11% 0 0 26%;
+}
+
+.statuses__white {
+  background-image: url("../img/Mask Group_1.svg");
+  margin-left: -13px;
+  width: 282px;
+  height: 110px;
+}
+
+.statuses__white img {
+  position: relative;
+  margin: 10% 0 0 35%;
+}
+
+.statuses__red {
+  background-image: url("../img/Mask Group_2.svg");
+  margin-left: -13px;
+  width: 282px;
+  height: 110px;
+}
+
+.statuses__red img:first-child {
+  margin-left: 40%;
+  padding-top: 10%;
+}
+
+.statuses__red img:nth-child(2) {
+  margin-left: 25%;
+  padding-top: 5%;
+}
+
+.statuses__red img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statuses__info {
+  background: #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 20px rgba(155, 148, 180, 0.4);
+          box-shadow: 0px 4px 20px rgba(155, 148, 180, 0.4);
+  height: 580px;
+}
+
+.statuses__info-title {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  line-height: 122.34%;
+  color: #1C1C1C;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.statuses__info-text p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #1C1C1C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.statuses__info-text img {
+  margin: 6px 11px auto 20px;
+}
+
+.programm {
+  margin-top: 36px;
+}
+
+.programm__img {
+  margin-bottom: 21px;
+  width: 444px;
+  height: 402px;
+}
+
+.programm__title, .programm__position-sectitle {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.programm__title {
+  margin-top: 61px;
+  margin-bottom: 22px;
+}
+
+.programm__position-sectitle {
+  margin-bottom: 23px;
+  letter-spacing: 0.5px;
+  margin-top: -30px;
+}
+
+.programm__price {
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF2424;
+  margin-bottom: 26px;
+}
+
+.programm__text {
+  font-size: 15px;
+  line-height: 21px;
+  color: #161616;
+}
+
+.programm__text-last {
+  margin-top: 66px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.programm__text-red {
+  color: red;
+}
+
+.programm__text span p:nth-child(2) {
+  padding-bottom: 28px;
+  margin-bottom: 0;
+}
+
+.programm__telephons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.programm__telephons img {
+  margin: auto;
+}
+
+.programm__position-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.programm__position-numbers img {
+  padding-right: 10px;
+}
+
+.programm__position-numbers div:nth-child(2) img {
+  padding-right: 0;
+}
+
+.programm__last {
+  font-size: 15px;
+  line-height: 25px;
+  color: #161616;
+  margin-top: 40px;
+}
+
+.info {
+  background-image: url("../img/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__title {
+  font-size: 35px;
+  line-height: 134.34%;
+  color: #161616;
+  margin: 61px 0 0 40%;
+}
+
+.info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 40px 40%;
+}
+
+.info__button button {
+  border: none;
+  border-radius: 5px;
+  width: 155px;
+  height: 45px;
+  background: #061653;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 18px 0 0;
+}
+
+.info__button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__button div span {
+  margin: 0 auto 0 0;
+  color: #FFFFFF;
+}
+
+.info__button-play {
+  margin: 9px 11px 10px 9px;
+}
+
+.info__button-apple {
+  margin: 5px 10px 9px 6px;
+}
+
+.info__button-load {
+  font-family: SF Pro Display;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.footer__last {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer__img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .join__tel {
+    margin-left: -100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
