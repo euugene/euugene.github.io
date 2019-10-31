@@ -356,6 +356,10 @@ header {
   margin: 6px 11px auto 20px;
 }
 
+.map__img {
+  max-width: 100%;
+}
+
 .programm {
   margin-top: 36px;
 }
@@ -509,6 +513,10 @@ header {
 .footer__last {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.footer__last img:first-child {
+  margin-left: 54px;
 }
 
 .footer__img {
