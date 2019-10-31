@@ -270,15 +270,6 @@ header {
           align-items: center;
 }
 
-.statuses__first {
-  margin-top: -80px;
-}
-
-.statuses__sec {
-  margin-left: -400px;
-  margin-top: -80px;
-}
-
 .statuses__plat {
   background-image: url("../img/Mask Group_4.svg");
   width: 255px;
