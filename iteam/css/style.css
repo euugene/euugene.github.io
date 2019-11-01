@@ -577,9 +577,6 @@ header {
   #slider {
     display: none;
   }
-  .partners {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -604,6 +601,9 @@ header {
   }
   .programm__position-sectitle {
     margin-top: 20px;
+  }
+  .partners {
+    display: none;
   }
   .footer__last img:first-child {
     margin-left: 0;
