@@ -1,3 +1,5 @@
+/* Горизонтальный скрол white/red/black/platinum*/
+
 #slider {
     width: 100%;
     margin: 96px 0 93px 0;
@@ -93,6 +95,19 @@
 	top: 1918px; */
 	margin-left: 28%;
 	background: #D6DDEA;
+	margin-top: -12px;
+}
+
+.slider__secBord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 55.5%;
+	background: #D6DDEA;
+	margin-top: -12px;
 }
 .slider__thirdBord{
 	position: absolute;
@@ -103,16 +118,7 @@
 	top: 1918px; */
 	margin-left: 83.2%;
 	background: #D6DDEA;
-}
-.slider__secBord{
-	position: absolute;
-	display: block;
-	width: 2px;
-	height: 14px;
-	/* left: 979.5px;
-	top: 1918px; */
-	margin-left: 55.5%;
-	background: #D6DDEA;
+	margin-top: -12px;
 }
 .statuses__first{
 	
@@ -134,4 +140,13 @@
 	margin-top: -50px;
 	display: none;
 
+}
+.statuses__third{
+	position: absolute;
+	margin-left: 82.8%;
+	font-size: 15px;
+	line-height: 18px;
+	color: #D6DDEA;
+	margin-top: -40px;
+	display: none;
 }

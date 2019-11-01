@@ -366,6 +366,17 @@ header {
   height: 402px;
 }
 
+.programm__img-girl {
+  position: absolute;
+  max-width: 100%;
+}
+
+.programm__img-table {
+  position: relative;
+  left: 4%;
+  top: 58%;
+}
+
 .programm__title, .programm__position-sectitle {
   font-size: 30px;
   line-height: 36px;
@@ -421,6 +432,7 @@ header {
 
 .programm__telephons img {
   margin: auto;
+  width: 100%;
 }
 
 .programm__position-numbers {
@@ -442,6 +454,14 @@ header {
   line-height: 25px;
   color: #161616;
   margin-top: 40px;
+}
+
+.map {
+  margin-top: 90px;
+}
+
+.map__img {
+  max-width: 100%;
 }
 
 .info {
@@ -509,6 +529,11 @@ header {
 .footer__last {
   margin-top: 30px;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer__last img:first-child {
@@ -520,9 +545,41 @@ header {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .statuses__white {
+    width: 107%;
+    border-radius: 5px 5px 0 0;
+  }
+  .statuses__red {
+    width: 107%;
+    border-radius: 5px 5px 0 0;
+  }
+  .statuses__black {
+    width: 107%;
+    border-radius: 5px 5px 0 0;
+  }
+  .statuses__plat {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .join__tel {
     margin-left: -100px;
+  }
+  .statuses__white, .statuses__red, .statuses__black {
+    background-size: cover;
+    width: 111%;
+    margin-left: -18px;
+  }
+  .statuses__plat {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .footer__last img:first-child {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

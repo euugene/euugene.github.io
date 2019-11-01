@@ -285,6 +285,14 @@ header
         margin-bottom: 21px
         width: 444px
         height: 402px
+        &-girl
+            position: absolute
+            max-width: 100%
+        &-table
+            position: relative
+            left: 4%
+            top: 58%
+
     &__title,  &__position-sectitle
         font-size: 30px
         line-height: 36px
@@ -327,6 +335,7 @@ header
         // height: 515px
         img     
             margin: auto
+            width: 100%
 
     &__position
         &-numbers
@@ -340,6 +349,10 @@ header
         line-height: 25px
         color: #161616
         margin-top: 40px
+.map
+    margin-top: 90px
+    &__img
+        max-width: 100%
         
 .info
     background-image: url("../img/footer.png")
@@ -383,13 +396,47 @@ header
     &__last
         margin-top: 30px
         margin-bottom: 30px
+        display: flex
+        justify-content: space-around
     &__last img:first-child
         margin-left: 54px
     &__img
         margin-top: 20px 
         margin-bottom: 20px
     
+@media only screen and (max-width : 1200px)
+    .statuses
+        &__white
+            width: 107%
+            border-radius: 5px 5px 0 0  
+            
+        &__red
+            width: 107%
+            border-radius: 5px 5px 0 0  
+            
+        &__black
+            width: 107%
+            border-radius: 5px 5px 0 0 
+        
+        &__plat
+            width: 100%
+            border-radius: 5px 5px 0 0   
+
 @media only screen and (max-width : 992px)
     .join 
         &__tel
             margin-left: -100px
+    .statuses
+        &__white, &__red, &__black
+            background-size: cover
+            width: 111%
+            // margin: 0 auto
+            // text-align: center
+            margin-left: -18px
+        &__plat
+            width: 100%
+            background-size: cover
+            background-repeat: no-repeat
+    .footer
+        &__last img:first-child
+            margin-left: 0
