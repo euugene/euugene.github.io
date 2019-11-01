@@ -163,6 +163,10 @@ header {
   margin: 20px 18px 0 0;
 }
 
+.join__button button:hover {
+  cursor: pointer;
+}
+
 .join__button div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,6 +502,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin: 20px 18px 0 0;
+}
+
+.info__button button:hover {
+  cursor: pointer;
 }
 
 .info__button div {
