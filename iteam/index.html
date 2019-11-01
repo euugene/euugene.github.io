@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/jquery.min.js"></script>
-
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
-    <!-- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
-        type="text/css" /> -->
-
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> -->
     <script src="./js/jquery-ui.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <!-- <script src="/js/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/> -->
-
-
     <link rel="stylesheet" type="text/css" href="css/bootsrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/firstSlider.css">
     <link rel="stylesheet" type="text/css" href="css/lastSlider.css">
-
+    <link rel="stylesheet" type="text/css" href="css/blockSlider.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
     <script>
         new WOW().init();
     </script>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,800&display=swap"
-        rel="stylesheet"> -->
 </head>
 
 <body class="body">
@@ -131,10 +116,10 @@
     <div class="join">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 offset-lg-0  wow fadeInUp">
+                <div class="col-lg-6 col-md-6 text-md-center col-sm-6 col-xs-3 offset-lg-0  wow fadeInUp">
                     <img src="./img/1.jpg" class="join__tel">
                 </div>
-                <div class="col-lg-7 col-md-7 offset-md-2 col-sm-7 col-xs-9 offset-lg-2 p-0">
+                <div class="col-lg-6 col-md-6  col-sm-6 col-xs-9 p-0">
                     <div class="join__title wow fadeInUp">
                         Присоединяйтесь к iteam!<br> И получайте еще больше возможностей.
                     </div>
@@ -242,39 +227,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Второй слайд">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Третий слайд">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div> -->
-
-
-
-
-
     <div class="statuses">
         <div class="container">
             <div class="row">
@@ -292,7 +244,6 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 wow fadeInUp">
                     <div id="slider">
                         <div class="slider-pos">
-                            <!-- <div class="slider-first-top"></div> -->
                             <div>
                                 <img src="./img/от 50 000.svg" class="statuses__first">
                                 <div class="slider__bord"></div>
@@ -300,7 +251,6 @@
 
 
                             </div>
-                            <!-- <div class="slider-first">от 100 000</div> -->
                             <div>
                                 <img src="./img/от 500 000.svg" class="statuses__sec">
                                 <div class="slider__secBord"></div>
@@ -311,12 +261,10 @@
                                 <div class="slider__thirdBord"></div>
                             </div>
 
-                            <!-- <div class="slider-sec">от 500 000 <img src="./img/rub.svg"></div> -->
-
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12 wow fadeInUp">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12 wow fadeInUp" id="infodesk">
                     <div id="white" class="statuses__white">
                         <img src="./img/White.svg" alt="">
                     </div>
@@ -358,7 +306,6 @@
 
                         <img src="./img/Red.svg" alt="">
 
-                        <!-- <img src="./img/от 50 000.svg" alt=""> -->
                     </div>
                     <div class="statuses__info">
                         <p class="statuses__info-title">
@@ -508,9 +455,234 @@
                     </div>
                 </div>
 
+
+
+
             </div>
         </div>
     </div>
+        <div id="slide" class="slide">
+            <div class="container">
+
+                <ol class="slide__indicators">
+                    <li class="slide__indicator slide__indicator_active" data-slider-to="0"></li>
+                    <li class="slide__indicator" data-slider-to="1"></li>
+                    <li class="slide__indicator" data-slider-to="2"></li>
+                    <li class="slide__indicator" data-slider-to="3"></li>
+                </ol>
+
+                <div class="slide__items">
+                    <div class="row">
+                            <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12 col-12 ">
+                            <div class="slide__item slide__item_active">
+
+                                <div id="white" class="statuses__white">
+                                    <img src="./img/White.svg" alt="">
+                                </div>
+                                <div class="statuses__info">
+                                    <p class="statuses__info-title">
+                                        Дополнительные привилегии:
+                                    </p>
+                                    <div class="statuses__info-text">
+                                        <p>
+
+                                            <img src="./img/ok.svg">
+                                            <span>Приветственные бонусы</span>
+                                        </p>
+                                        <p>
+
+                                            <img src="./img/ok.svg">
+
+                                            <span> Расширенная гарантия на устройства</span>
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Участие в закрытых акциях<br>
+                                            и специальных предложениях
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Подменный фонд на время ремонта
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12 col-12 ">
+                            <div class="slide__item">
+                                <div class="statuses__red">
+
+                                    <img src="./img/Red.svg" alt="">
+
+                                </div>
+                                <div class="statuses__info">
+                                    <p class="statuses__info-title">
+                                        Дополнительные привилегии:
+                                    </p>
+                                    <div class="statuses__info-text">
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Приветственные бонусы
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Расширенная гарантия на устройства
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Участие в закрытых акциях<br>
+                                            и специальных предложениях
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Подменный фонд на время ремонта
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Особые условия на услугу
+                                            Trade-in
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12 col-12 ">
+                            <div class="slide__item">
+
+                                <div class="statuses__black">
+
+                                    <img src="./img/Black_2.svg" alt="">
+
+                                    <img src="./img/от 250 000.svg" alt="">
+                                </div>
+                                <div class="statuses__info">
+                                    <p class="statuses__info-title">
+                                        Дополнительные привилегии:
+                                    </p>
+                                    <div class="statuses__info-text">
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Приветственные бонусы
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Расширенная гарантия на устройства
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Участие в закрытых акциях<br>
+                                            и специальных предложениях
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Подменный фонд на время ремонта
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Особые условия на услугу
+                                            Trade-in
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+
+                                            Приглашения на мероприятия
+                                            и закрытые презентации
+
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+
+                                            Приоритетный ремонт
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12 col-12 ">
+                            <div class="slide__item">
+                                <div class="statuses__plat">
+                                    <img src="./img/Platinum.svg" alt="">
+                                </div>
+
+
+                                <div class="statuses__info">
+                                    <p class="statuses__info-title">
+                                        Дополнительные привилегии:
+                                    </p>
+                                    <div class="statuses__info-text">
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Приветственные бонусы
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Расширенная гарантия на устройства
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Участие в закрытых акциях<br>
+                                            и специальных предложениях
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Подменный фонд на время ремонта
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Особые условия на услугу
+                                            Trade-in
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Приглашения на мероприятия
+                                            и закрытые презентации
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Приоритетный ремонт
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Примерка TV Sony у вас дома
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Бесплатная доставка
+                                        </p>
+                                        <p>
+                                            <img src="./img/ok.svg">
+                                            Личный менеджер
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="slide__control slide__control_prev" href="#" role="button"></a>
+            <a class="slide__control slide__control_next" href="#" role="button"></a>
+        </div>
+
+
 
     <div class="programm">
         <div class="container">
@@ -613,7 +785,6 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 ">
-                    <!-- <img src="./img/футер 1.svg" class="footer__people" alt=""> -->
                     <div class="info__title wow fadeInUp">Присоединяйтесь <br>
                         к бонусной программе iteam!</div>
                     <div class="info__button wow fadeInUp">
@@ -675,43 +846,43 @@
 
                 <!---------------------------------------Скрол для мобильой версии-------------------------------------->
                 <div class="footer-place-mob col-lg-10 col-md-12 col-sm-12 col-xs-12 col-12 ">
-                    <div class="slider">
-                        <div class="slider__wrapper">
-                            <div class="slider__item">
+                    <div class="sliderl">
+                        <div class="sliderl__wrapper">
+                            <div class="sliderl__item">
                                 <div> <img src="./img/icenter.svg">
 
 
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="sliderl__item">
                                 <div><img src="./img/Sony centre_footer.svg">
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="sliderl__item">
                                 <div>
                                     <img src="./img/Digy_footer.svg">
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="sliderl__item">
                                 <div>
                                     <img src="./img/icenter сервис_footer.svg">
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="sliderl__item">
                                 <div>
                                     <img src="./img/samsung_footer.svg">
 
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="sliderl__item">
                                 <div>
 
                                     <img src="./img/sony_footer.svg">
                                 </div>
                             </div>
                         </div>
-                        <a class="slider__control slider__control_left" href="#" role="button"></a>
-                        <a class="slider__control slider__control_right slider__control_show" href="#"
+                        <a class="sliderl__control sliderl__control_left" href="#" role="button"></a>
+                        <a class="sliderl__control sliderl__control_right sliderl__control_show" href="#"
                             role="button"></a>
                     </div>
                 </div>
@@ -774,7 +945,9 @@
 
     <script src="./js/map.js"></script>
     <script src="./js/scroll.js"></script>
-    <!-- <script src="./js/firstSlider.js"></script> -->
+    <script src="./js/firstSlider.js"></script>
+
+    <script src="./js/blockSlider.js"></script>
 
     <script src="./js/lastSlider.js"></script>
     <!-- <script src="./js/logo.js"></script> -->
