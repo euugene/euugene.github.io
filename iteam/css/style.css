@@ -48,9 +48,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .partners__group-icentre {
@@ -389,6 +388,10 @@ header {
   margin-bottom: 22px;
 }
 
+.programm__position img {
+  max-width: 100%;
+}
+
 .programm__position-sectitle {
   margin-bottom: 23px;
   letter-spacing: 0.5px;
@@ -564,6 +567,27 @@ header {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .partners-place-firstmob {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #slider {
+    display: none;
+  }
+  .partners {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-place-mob {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .join__tel {
     margin-left: -100px;
@@ -578,8 +602,23 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .programm__position-sectitle {
+    margin-top: 20px;
+  }
   .footer__last img:first-child {
     margin-left: 0;
+  }
+  .footer-place {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  header {
+    background-image: url("../img/bg_mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

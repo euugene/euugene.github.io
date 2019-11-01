@@ -37,7 +37,7 @@ header
         // height: 100px
         display: flex
         align-items: center
-        justify-content: space-between
+        justify-content: space-around
     
         // &-block:nth-child(4)
         //     margin-top: 10px
@@ -302,6 +302,8 @@ header
         margin-top: 61px
         margin-bottom: 22px
     &__position
+        img
+            max-width: 100%
         &-sectitle
             margin-bottom: 23px
             letter-spacing: 0.5px
@@ -403,6 +405,7 @@ header
     &__img
         margin-top: 20px 
         margin-bottom: 20px
+
     
 @media only screen and (max-width : 1200px)
     .statuses
@@ -421,7 +424,20 @@ header
         &__plat
             width: 100%
             border-radius: 5px 5px 0 0   
-
+@media only screen and (min-width : 1024px)
+    .partners-place-firstmob
+        display: none
+    
+@media only screen and (max-width : 1024px)
+    #slider 
+        display: none
+    
+    .partners
+        display: none
+        
+@media only screen and (min-width : 992px)
+    .footer-place-mob
+            display: none
 @media only screen and (max-width : 992px)
     .join 
         &__tel
@@ -430,13 +446,26 @@ header
         &__white, &__red, &__black
             background-size: cover
             width: 111%
-            // margin: 0 auto
-            // text-align: center
             margin-left: -18px
         &__plat
             width: 100%
             background-size: cover
             background-repeat: no-repeat
+    .programm
+         &__position
+            &-sectitle
+                margin-top: 20px
+               
     .footer
         &__last img:first-child
             margin-left: 0
+    .footer-place
+        display: none
+
+@media only screen and (max-width : 414px)  
+    header
+        background-image: url("../img/bg_mobile.png") 
+        background-repeat: no-repeat
+        background-position: center
+        max-width: 100%
+   
