@@ -93,3 +93,11 @@
     max-width: 50%;
   }
 }
+@media only screen and (max-width : 414px){
+
+  .slider__item {
+      
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

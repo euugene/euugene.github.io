@@ -6,12 +6,16 @@ ul, li
     display: block
     padding: 0
     margin: 0
+img 
+    max-width: 100%
 body
     font-family: "SF Pro Display"
-header
+.header
     background-image: url("../img/background.jpg") 
     background-repeat: no-repeat
-    background-position: center
+    // background-position: center
+    background-size: cover
+    background-position-x: 50%
     max-width: 100%
 .header
     &__logo img
@@ -237,7 +241,7 @@ header
     margin-top: 36px
     &__img
         margin-bottom: 21px
-        width: 444px
+        width: 100%
         height: 402px
         &-girl
             position: absolute
@@ -311,7 +315,10 @@ header
     background-image: url("../img/footer.png")
     background-size: cover
     background-repeat: no-repeat
-    background-position: center
+    // background-position: center
+    
+    background-position-x: 50%
+
     &__title
         font-size: 35px
         line-height: 134.34%
@@ -355,8 +362,8 @@ header
     &__last img:first-child
         margin-left: 54px
     &__img
-        margin-top: 20px 
-        margin-bottom: 20px
+        margin-top: 30px 
+        margin-bottom: 30px
 
     
 
@@ -364,6 +371,8 @@ header
     #slide
         display: none
 @media only screen and (max-width : 1200px)
+    
+
     .opportunities
         margin-bottom: 30px
     .statuses
@@ -406,6 +415,12 @@ header
 
     .statuses__red img:first-child 
         margin-left: 44%
+    .footer__last img:first-child 
+        margin-left: 0
+    .footer__last
+        display: flex 
+        justify-content: space-around
+
 @media only screen and (min-width : 1024px)
     .partners-place-firstmob
         display: none
@@ -415,6 +430,11 @@ header
         display: none
     .partners
         display: none
+    .statuses
+        &__title
+            margin-top: 30px
+        &__text
+            margin-bottom: 30px
     
     
         
@@ -440,7 +460,9 @@ header
                 margin-top: 20px
     .partners
         display: none
-               
+    .info
+        &__button, &__title
+            // margin: 0
     .footer
         &__last img:first-child
             margin-left: 0
@@ -450,3 +472,23 @@ header
         margin-bottom: 20px
         height: 0 px
 
+@media only screen and (max-width : 768px)
+    #slide 
+        // margin-top: px
+    .join
+        &__title
+            text-align: center
+            br 
+                display: none
+        &__text
+            text-align: center
+        &__button
+            // display: flex
+            margin-left: 20%
+            // align-item: center
+            // flex-direction: column
+            // button
+            //     margin: 10px auto
+    
+    .join-tel
+        display: none

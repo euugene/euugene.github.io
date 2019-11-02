@@ -10,14 +10,19 @@ ul, li {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: "SF Pro Display";
 }
 
-header {
+.header {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position-x: 50%;
   max-width: 100%;
 }
 
@@ -365,7 +370,7 @@ header {
 
 .programm__img {
   margin-bottom: 21px;
-  width: 444px;
+  width: 100%;
   height: 402px;
 }
 
@@ -475,7 +480,7 @@ header {
   background-image: url("../img/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: 50%;
 }
 
 .info__title {
@@ -552,8 +557,8 @@ header {
 }
 
 .footer__img {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -611,6 +616,16 @@ header {
   .statuses__red img:first-child {
     margin-left: 44%;
   }
+  .footer__last img:first-child {
+    margin-left: 0;
+  }
+  .footer__last {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -625,6 +640,12 @@ header {
   }
   .partners {
     display: none;
+  }
+  .statuses__title {
+    margin-top: 30px;
+  }
+  .statuses__text {
+    margin-bottom: 30px;
   }
 }
 
@@ -663,6 +684,24 @@ header {
   .statuses__info {
     margin-bottom: 20px;
     height: 0 px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .join__title {
+    text-align: center;
+  }
+  .join__title br {
+    display: none;
+  }
+  .join__text {
+    text-align: center;
+  }
+  .join__button {
+    margin-left: 20%;
+  }
+  .join-tel {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
