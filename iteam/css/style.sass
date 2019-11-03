@@ -370,16 +370,29 @@ body
 @media only screen and (min-width : 1200px)
     #slide
         display: none
+    .join
+        &__button
+            margin-left: 23%
 @media only screen and (max-width : 1200px)
-    
-
+    #slide
+        margin-bottom: 20px
+    .slide-item-pos1
+        // margin-top: 40px
+        margin-bottom: 20px
+     .slide-item-pos2, .slide-item-pos3, .slide-item-pos4
+        margin-bottom: 0
     .opportunities
         margin-bottom: 30px
     .statuses
         display: none
     .opportunities
         margin-top: 40px
+    .join
+        &__button
+            margin-left: 15%
     .statuses
+        &__text
+            margin-bottom: 20px
         &__white
                width: 111%
                border-radius: 5px 5px 0 0
@@ -420,6 +433,7 @@ body
     .footer__last
         display: flex 
         justify-content: space-around
+    
 
 @media only screen and (min-width : 1024px)
     .partners-place-firstmob
@@ -437,14 +451,28 @@ body
             margin-bottom: 30px
     
     
+    
         
 @media only screen and (min-width : 992px)
     .footer-place-mob
-            display: none
+        display: none
+    
+    
 @media only screen and (max-width : 991px)
+    
+    .header
+        background-position-x: 60%
+        &__text
+            // width: 00px
     .join 
         &__tel
             margin-left: -100px
+        &__button button
+            margin-left: 120%
+        &__button
+            margin-left: 0%
+    .join-desktop-tel
+        display: none
     .statuses
         &__white, &__red, &__black
             background-size: cover
@@ -454,6 +482,9 @@ body
             width: 100%
             background-size: cover
             background-repeat: no-repeat
+        &__text
+            br
+                display: none
     .programm
          &__position
             &-sectitle
@@ -472,23 +503,30 @@ body
         margin-bottom: 20px
         height: 0 px
 
+@media only screen and (min-width : 769px)
+    .programm-title-mob, .programm-price-mob, .programm-position-mob, .programm-text-tablet, 
+        display: none
 @media only screen and (max-width : 768px)
-    #slide 
-        // margin-top: px
+    // .programm-title-desktop, .programm-price-desktop
+    .programm-text-desktop, .programm-position-desktop
+        display: none
     .join
         &__title
             text-align: center
             br 
                 display: none
+            
         &__text
             text-align: center
         &__button
             // display: flex
-            margin-left: 20%
+            margin-left: -18%
             // align-item: center
             // flex-direction: column
             // button
             //     margin: 10px auto
-    
+    .programm
+        &__img
+            padding-left: 10%
     .join-tel
         display: none
