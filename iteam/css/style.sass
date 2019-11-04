@@ -514,7 +514,8 @@ body
         &__button button
             // margin-left: 120%
         &__button
-            text-align: center
+            // text-align: center
+            margin-left: 27%
     .join-desktop-tel
         display: none
     .programm-img-desktop
@@ -524,10 +525,19 @@ body
             background-size: cover
             width: 111%
             margin-left: -18px
+        &__white
+            img
+                margin: 11% 0 0 37%
+        &__red
+            img
+                margin: 11% 0 0 34%
         &__plat
             width: 100%
             background-size: cover
             background-repeat: no-repeat
+            
+            img
+                margin: 11% 0 0 33%
         &__text
             br
                 display: none
@@ -571,6 +581,8 @@ body
     .programm-mob
         display: none
 @media only screen and (max-width : 768px)
+    .map
+        margin-top: 30px
     .programm-mob .programm__position-sectitle
         text-align: center
     .header__text
@@ -623,9 +635,9 @@ body
             text-align: center
         &__button
             display: flex
-            flex-wrap: wrap
+            // flex-wrap: wrap
             // display: flex
-            // margin-left: -18%
+            margin-left: 18%
             // align-item: center
             // flex-direction: column
             // button
@@ -635,8 +647,8 @@ body
             // flex-direction: column
         &__button form
             // display: inline-block
-            flex: 2 0 50%
-            flex-grow: 1
+            // flex: 2 0 50%
+            // flex-grow: 1
     .programm
         &__img
             &-table
@@ -687,8 +699,10 @@ body
         &__button
             display: flex
             flex-direction: column
+            max-width: 100%
             form
-                margin: 10px auto
+                margin-top: 10px
+                margin-left: 21% 
             // display: flex
             // margin-left: -18%
             // align-item: center
@@ -740,5 +754,28 @@ body
             display: inline-block
             flex: 1 0 50%
             flex-grow: 1
+    .statuses
+        &__white, &__red, &__black
+            background-size: cover
+            width: 100%
+            margin-left: -18px
+        &__white
+            img
+                margin: 11% 0 0 37%
+        &__red
+            img
+                margin: 11% 0 0 34%
+        &__plat
+            width: 100%
+            background-size: cover
+            background-repeat: no-repeat
+            
+            img
+                margin: 11% 0 0 33%
     
-    
+    .join__button
+        margin-left: 15%
+
+@media only screen and (max-width : 414px)
+    .join__button
+        margin-left: 8%

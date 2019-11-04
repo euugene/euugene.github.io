@@ -714,7 +714,7 @@ body {
     margin-left: -100px;
   }
   .join__button {
-    text-align: center;
+    margin-left: 27%;
   }
   .join-desktop-tel {
     display: none;
@@ -727,10 +727,19 @@ body {
     width: 111%;
     margin-left: -18px;
   }
+  .statuses__white img {
+    margin: 11% 0 0 37%;
+  }
+  .statuses__red img {
+    margin: 11% 0 0 34%;
+  }
   .statuses__plat {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .statuses__plat img {
+    margin: 11% 0 0 33%;
   }
   .statuses__text br {
     display: none;
@@ -762,6 +771,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .map {
+    margin-top: 30px;
+  }
   .programm-mob .programm__position-sectitle {
     text-align: center;
   }
@@ -815,16 +827,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .join__button form {
-    -webkit-box-flex: 2;
-        -ms-flex: 2 0 50%;
-            flex: 2 0 50%;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    margin-left: 18%;
   }
   .programm__img-table {
     position: relative;
@@ -882,9 +885,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
   }
   .join__button form {
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-left: 21%;
   }
   .join.mob-pos {
     padding-left: 15px;
@@ -934,6 +939,34 @@ body {
             flex: 1 0 50%;
     -ms-flex-positive: 1;
         flex-grow: 1;
+  }
+  .statuses__white, .statuses__red, .statuses__black {
+    background-size: cover;
+    width: 100%;
+    margin-left: -18px;
+  }
+  .statuses__white img {
+    margin: 11% 0 0 37%;
+  }
+  .statuses__red img {
+    margin: 11% 0 0 34%;
+  }
+  .statuses__plat {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .statuses__plat img {
+    margin: 11% 0 0 33%;
+  }
+  .join__button {
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .join__button {
+    margin-left: 8%;
   }
 }
 /*# sourceMappingURL=style.css.map */
