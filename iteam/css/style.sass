@@ -91,6 +91,7 @@ body
             background-image: url("/img/sony_color.svg")
 .join
     margin-top: 20px
+    margin-bottom: 20px
     &__title
         font-family: SF Pro Display
         font-size: 30px 
@@ -112,7 +113,8 @@ body
             height: 45px
             background: #061653
             display: flex
-            margin: 20px 18px 0 0
+            // margin: 20px 18px 0 0
+            margin-right: 20px
         button:hover
             cursor: pointer 
         div 
@@ -237,6 +239,23 @@ body
             margin-bottom: 20px
         &-text img
             margin: 6px 11px auto 20px 
+        &__button
+            display: flex
+            flex-wrap: wrap
+            
+            // display: flex
+            // margin-left: -18%
+            // align-item: center
+            // flex-direction: column
+            // button
+            //     margin: 10px auto
+            
+            // display: flex
+            // flex-direction: column
+        &__button form
+            display: inline-block
+            flex: 1 0 50%
+            flex-grow: 1
 .programm
     margin-top: 36px
     &__img
@@ -323,20 +342,22 @@ body
         font-size: 35px
         line-height: 134.34%
         color: #161616
-        margin: 61px 0 0 40%
+        // margin: 61px 0 0 40%
+        margin-top: 61px
     &__button 
         display: flex
-        margin: 30px 0 40px 40% 
-        button
-            
+        // margin: 30px 0 40px 40% 
+        margin-top: 30px
+        margin-bottom: 40px
+        button 
             border: none
             border-radius: 5px
             width: 155px
             height: 45px
             background: #061653
             display: flex
-            
-            margin: 20px 18px 0 0
+        form:nth-child(2) button
+            margin-left: 10px
         button:hover 
             cursor: pointer
         div 
@@ -353,6 +374,13 @@ body
             font-family: SF Pro Display
             font-size: 12px
             color: #FFFFFF
+
+
+.info-mob
+    background-image: url("../img/info_mob.png")
+    background-size: cover
+    background-repeat: no-repeat
+    height: 620px
 .footer
     &__last
         margin-top: 30px
@@ -364,29 +392,39 @@ body
     &__img
         margin-top: 30px 
         margin-bottom: 30px
+.info-title-mob
+    font-size: 21px
+    margin-top: 20px
+    // line-height: 134.34%
+    text-align: center
+    color: #FFFFFF
 
     
 
 @media only screen and (min-width : 1200px)
     #slide
         display: none
-    .join
-        &__button
-            margin-left: 23%
+    // .join
+    //     &__button
+    //         margin-left: 23%
 @media only screen and (max-width : 1200px)
     #slide
         margin-bottom: 20px
-    .slide-item-pos1
+    
+    .slide
+        &__items
+            padding-bottom: 20px
+    // .slide-item-pos1
         // margin-top: 40px
         margin-bottom: 20px
-     .slide-item-pos2, .slide-item-pos3, .slide-item-pos4
-        margin-bottom: 0
+    //  .slide-item-pos2, .slide-item-pos3, .slide-item-pos4
+    //     margin-bottom: 0
     .opportunities
         margin-bottom: 30px
     .statuses
         display: none
-    .opportunities
-        margin-top: 40px
+    // .opportunities
+    //     margin-top: 40px
     .join
         &__button
             margin-left: 15%
@@ -450,12 +488,18 @@ body
         &__text
             margin-bottom: 30px
     
+    .programm__position
+        margin-top: -5%
+    
     
     
         
 @media only screen and (min-width : 992px)
     .footer-place-mob
         display: none
+    .programm-mob
+        display: none
+    
     
     
 @media only screen and (max-width : 991px)
@@ -468,10 +512,12 @@ body
         &__tel
             margin-left: -100px
         &__button button
-            margin-left: 120%
+            // margin-left: 120%
         &__button
-            margin-left: 0%
+            text-align: center
     .join-desktop-tel
+        display: none
+    .programm-img-desktop
         display: none
     .statuses
         &__white, &__red, &__black
@@ -486,9 +532,21 @@ body
             br
                 display: none
     .programm
-         &__position
+        &__position
             &-sectitle
                 margin-top: 20px
+    // .programm__position-sectitle .programm-desktop
+    //     margin-top: 200px
+        &__img
+            // height: 250px
+            &-table
+                position: relative
+                left: 6%
+                top: 58%
+            &-girl
+                position: absolute
+                padding-right: 10%
+                padding-left: 10%
     .partners
         display: none
     .info
@@ -501,32 +559,181 @@ body
         display: none
     .statuses__info
         margin-bottom: 20px
-        height: 0 px
+        // height: 0px
+    .mob-pos
+        text-align: center
 
 @media only screen and (min-width : 769px)
-    .programm-title-mob, .programm-price-mob, .programm-position-mob, .programm-text-tablet, 
+    // .programm-title-mob, .programm-price-mob, .programm-position-mob, .programm-text-tablet
+    //     display: none
+    
+    
+    .programm-mob
         display: none
 @media only screen and (max-width : 768px)
-    // .programm-title-desktop, .programm-price-desktop
-    .programm-text-desktop, .programm-position-desktop
+    .programm-mob .programm__position-sectitle
+        text-align: center
+    .header__text
         display: none
+    .programm-mob .programm__position-numbers 
+        display: flex
+        flex-wrap: wrap
+        text-align: center
+    .programm-mob .programm__position-numbers div
+        display: inline-block
+        flex: 2 0 33.333333%
+   
+        // flex-grow: 1
+        // flex-grow: 1
+    // .header-desktop
+    //     display: none
+    // .programm__telephons img
+    //     width: 490px
+    //     height: 380px
+    .header-title-mob
+        font-size: 30px
+        line-height: 37px
+        text-align: center
+    .header-mob
+        background-image: url("../img/header_mob.svg") 
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        // background-position-x: 50%
+        // max-width: 100%
+        height: 420px
+    .programm-desktop
+        display: none
+    // .programm-title-desktop, .programm-price-desktop
+    // .programm-text-desktop, .programm-position-desktop, 
+    //     display: none
+    .programm-position-mob
+        padding: 0 
+        margin-top: 20px
     .join
         &__title
             text-align: center
+            margin-top: 10px
             br 
                 display: none
             
         &__text
             text-align: center
         &__button
+            display: flex
+            flex-wrap: wrap
             // display: flex
-            margin-left: -18%
+            // margin-left: -18%
             // align-item: center
             // flex-direction: column
             // button
             //     margin: 10px auto
+            
+            // display: flex
+            // flex-direction: column
+        &__button form
+            // display: inline-block
+            flex: 2 0 50%
+            flex-grow: 1
     .programm
         &__img
-            padding-left: 10%
+            &-table
+                    position: relative
+                    left: 13%
+                    top: 55%
+            &-girl
+                    position: absolute
+                    padding-right: 10%
+                    padding-left: 10%
     .join-tel
         display: none
+
+@media only screen and (max-width : 572px)
+    .statuses
+        &__text
+            margin-bottom: 20px
+        &__white
+           width: 105%
+           border-radius: 5px 5px 0 0
+           background-size: cover
+           margin-left: -13px
+           margin-top: 1px
+            
+            
+        &__red
+           width: 105%
+           border-radius: 5px 5px 0 0
+           background-size: cover
+           margin-left: -13px
+           margin-top: 1px
+            
+        &__black
+           width: 105%
+           border-radius: 5px 5px 0 0
+           background-size: cover
+           margin-left: -13px
+           margin-top: 1px
+        
+        &__plat
+            width: 100%
+            border-radius: 5px 5px 0 0   
+            background-size: cover
+    .join
+        &__button
+            display: flex
+            flex-direction: column
+            form
+                margin: 10px auto
+            // display: flex
+            // margin-left: -18%
+            // align-item: center
+            // flex-direction: column
+            // button
+            //     margin: 10px auto
+            
+            // display: flex
+            // flex-direction: column
+    .join.mob-pos 
+        padding-left: 15px
+        padding-right: 15px 
+    .join__button 
+        // margin-left: auto
+        // margin-right: auto
+    .info
+        &__button
+            display: flex
+            flex-direction: column
+            form
+                margin: 10px auto
+@media only screen and (min-width : 414px)
+    .header-mob
+            display: none
+    .info-mob
+        display: none
+    
+
+@media only screen and (max-width : 414px)
+    .header-desktop
+        display: none
+    .info-desktop
+        display: none
+    .info
+        &__button
+            display: flex
+            flex-wrap: wrap
+            
+            // display: flex
+            // margin-left: -18%
+            // align-item: center
+            // flex-direction: column
+            // button
+            //     margin: 10px auto
+            
+            // display: flex
+            // flex-direction: column
+        &__button form
+            display: inline-block
+            flex: 1 0 50%
+            flex-grow: 1
+    
+    
