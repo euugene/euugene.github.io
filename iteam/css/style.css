@@ -871,6 +871,9 @@ body {
     border-radius: 5px 5px 0 0;
     background-size: cover;
   }
+  .info__button form:nth-child(2) button {
+    margin-left: 0;
+  }
   .join__button {
     display: -webkit-box;
     display: -ms-flexbox;
