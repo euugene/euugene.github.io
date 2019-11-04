@@ -845,6 +845,9 @@ body {
 }
 
 @media only screen and (max-width: 572px) {
+  .slide-item-pos2 {
+    margin-top: -35px;
+  }
   .statuses__text {
     margin-bottom: 20px;
   }
@@ -918,10 +921,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 413px) {
   .header-desktop {
     display: none;
   }
+}
+
+@media only screen and (max-width: 414px) {
   .info-desktop {
     display: none;
   }
@@ -942,7 +948,7 @@ body {
   }
   .statuses__white, .statuses__red, .statuses__black {
     background-size: cover;
-    width: 100%;
+    width: 112%;
     margin-left: -18px;
   }
   .statuses__white img {
