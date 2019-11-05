@@ -7,8 +7,12 @@
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="./css/lightslider.css"/>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="js/wow.min.js"></script>
+          
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    
     <link rel="stylesheet" type="text/css" href="css/bootsrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -22,9 +26,33 @@
     <script>
         new WOW().init();
     </script>
+    
 </head>
 
 <body class="body">
+
+
+<!-- <ul id="lightSlider">
+        <li>
+            <h3>First Slide</h3>
+            <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+                <h3>Second Slide</h3>
+                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+            </li>
+            <li>
+                    <h3>Second Slide</h3>
+                    <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                </li>
+        
+    </ul> -->
+
+
     <div class="header header-desktop" style="width: 100%">
         <div class="container">
             <div class="row">
@@ -65,13 +93,13 @@
         </div>
     </div>
     <!------------------------------------------------------------------------------------------------>
-
+    
     <div class="partners wow">
         <div class="container">
             <div class="row ">
                 <div class="col-lg-12 col-md-12 col-md-12 col-xs-12 col-12">
                     <div class="partners__group">
-                        <div class="partners__group-icentre"> <a href="#" ></a></div>
+                        <a href="#" ><div class="partners__group-icentre"></div></a>
                         <a href="#" class="partners__group-scentre"></a>
                         <a href="#" class="partners__group-digy"></a>
                         <a href="#" class="partners__group-premium"></a>
@@ -148,11 +176,11 @@
                 </div>
                 <div class="mob-pos col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div class="join__title wow fadeInUp">
-                        Присоединяйтесь к iteam!<br> И получайте еще больше возможностей.
+                        Присоединяйтесь к iteam!</br> И получайте еще больше возможностей.
                     </div>
                     <div class="join__text wow fadeInUp">
-                        <span>Присоединяйтесь к команде высокотехнологичных брендов!</span><br><br>
-                        <p>Загружайте мобильное приложение iteam на свой смартфон и пользуйтесь всеми
+                        <span>Присоединяйтесь к команде высокотехнологичных брендов!</span><br>
+                        <p>Загружайте мобильное<br> приложение iteam на свой смартфон и пользуйтесь всеми
                             преимуществами участия в программе лояльности.</p>
                     </div>
                     <div class="join__button wow fadeInUp">
@@ -185,7 +213,7 @@
         <div class="container ">
             <div class="row">
                 <div class="opportunities__main col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center wow fadeInUp">
-                    <span class="">Возможности мобильного приложения iteam:</span>
+                    <span class="opportunities__main-sp">Возможности мобильного <br class="opp-mob"> приложения iteam:</span>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12 text-center wow fadeInUp">
                     <div class="opportunities__img">
@@ -194,7 +222,7 @@
                     <div class="opportunities__title">Личный кабинет </div>
                     <div class="opportunities__text">Будьте в курсе о накопленных бонусах <br>
                         и доступных привилегиях, отслеживайте<br>
-                        историю покупок и оставайтесь на связи с нами</div>
+                        историю покупок и оставайтесь<br class="opp-br"> на связи с нами</div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12 text-center wow fadeInUp">
@@ -214,10 +242,10 @@
                         <img src="./img/bonus.svg">
                     </div>
                     <div class="opportunities__title">Дополнительные привилегии </div>
-                    <div class="opportunities__text">Улучшенная бонусная система позволит Вам<br>
-                        получить дополнительные возможности и<br>
-                        особенные привилегии. Выгодные предложения<br>
-                        от группы компаний группы компании <br>
+                    <div class="opportunities__text">Улучшенная бонусная система позволит<br class="opp-mob"> Вам<br class="opp-desk">
+                        получить дополнительные<br class="opp-mob"> возможности и<br class="opp-desk">
+                        особенные привилегии.<br class="opp-mob"> Выгодные предложения<br class="opp-desk">
+                        от группы<br class="opp-mob"> компаний группы компании <br>
                         IT Premium и партнеров</div>
                 </div>
 
@@ -227,9 +255,9 @@
                         <img src="./img/news.svg">
                     </div>
                     <div class="opportunities__title">Новости и акции </div>
-                    <div class="opportunities__text">Следите за новостями в мире <br>
-                        цифровых технологий и получайте<br>
-                        выгодные предложения от нас</div>
+                    <div class="opportunities__text">Следите за новостями в мире <br class="opp-desk" >
+                        цифровых <br class="opp-mob"> технологий и получайте<br class="opp-desk">
+                        выгодные <br class="opp-mob"> предложения от нас</div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12 text-center wow fadeInUp">
@@ -250,7 +278,7 @@
                     </div>
                     <div class="opportunities__title">История операций </div>
                     <div class="opportunities__text">Теперь в приложении Вы можете видеть<br>
-                        историю покупок ( дату, товар, стоимость).<br> Ориентироваться в гарантийных сроках<br>
+                        историю покупок (дату,товар,стоимость).<br>Ориентироваться в гарантийных сроках<br >
                         и начисленных за покупку баллов</div>
                 </div>
             </div>
@@ -510,7 +538,7 @@
                             Статусы участников
                         </div>
                         <div class="statuses__text">
-                            Каждая покупка с приложением iteam — это шаг к новому статусу, новым привилегиям, большим
+                            Каждая покупка с приложением iteam <br class="opp-mob"> — это шаг к новому статусу, новым привилегиям, большим
                             возможностям.<br>
                             Рады представить Вам четыре новых статуса.
                         </div>
@@ -860,10 +888,10 @@
                     <div class="programm__price programm-price-mob text-center wow fadeInUp">
                         1000 руб = 50 баллов
                     </div>
-                    <!-- <div class="programm__img wow fadeInUp">
-                        <img src="./img/program_img.png" class="programm__img-girl" alt="programm__img">
-                        <img src="./img/50B.svg" class="programm__img-table" alt="">
-                    </div> -->
+                    <div class="programm__img wow fadeInUp">
+                        <img src="./img/program_img.png" class="programm__img-mobg" alt="programm__img">
+                        <img src="./img/50B.svg" class="programm__img-mob" alt="">
+                    </div>
 
 
                     <div class="programm__text programm-text-tablet wow fadeInUp">
@@ -1162,16 +1190,15 @@
 
 
 
-
-
-    <!-- <script src="./js/map.js"></script> -->
+    
+    <!-- <script src="./js/lightslider.js"></script>  
+    <script src="./js/lightScroll.js"></script>   -->
     <script src="./js/scroll.js"></script>
     <script src="./js/firstSlider.js"></script>
 
     <script src="./js/blockSlider.js"></script>
 
     <script src="./js/lastSlider.js"></script>
-    <!-- <script src="./js/logo.js"></script> -->
 </body>
 
 </html>

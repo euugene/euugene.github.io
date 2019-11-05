@@ -707,6 +707,10 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+  .programm__title, .programm__position-sectitle {
+    font-size: 28px;
+    line-height: 33px;
+  }
   .header {
     background-position-x: 60%;
   }
@@ -740,9 +744,6 @@ body {
   }
   .statuses__plat img {
     margin: 11% 0 0 33%;
-  }
-  .statuses__text br {
-    display: none;
   }
   .programm__position-sectitle {
     margin-top: 20px;
@@ -795,6 +796,7 @@ body {
             flex: 2 0 33.333333%;
   }
   .header-title-mob {
+    margin-top: 29px;
     font-size: 30px;
     line-height: 37px;
     text-align: center;
@@ -816,9 +818,8 @@ body {
   .join__title {
     text-align: center;
     margin-top: 10px;
-  }
-  .join__title br {
-    display: none;
+    font-size: 23px;
+    line-height: 35px;
   }
   .join__text {
     text-align: center;
@@ -827,7 +828,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 18%;
+    margin-left: 13%;
   }
   .programm__img-table {
     position: relative;
@@ -891,7 +892,7 @@ body {
     max-width: 100%;
   }
   .join__button form {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 21%;
   }
   .join.mob-pos {
@@ -919,6 +920,15 @@ body {
   .info-mob {
     display: none;
   }
+  .opp-br {
+    display: none;
+  }
+  .opp-mob {
+    display: none;
+  }
+  .opp-desk {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 413px) {
@@ -928,6 +938,44 @@ body {
 }
 
 @media only screen and (max-width: 414px) {
+  .programm .programm-mob {
+    margin-top: 20px;
+  }
+  .programm__title {
+    margin-top: 0px;
+  }
+  .opportunities__main-sp {
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .join__button button {
+    width: 191px;
+    height: 55px;
+  }
+  .join__button-load {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .join__button div span {
+    width: 105px;
+    height: 21px;
+  }
+  .opp-mob {
+    display: block;
+  }
+  .opp-desk {
+    display: none;
+  }
+  .statuses__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .statuses__text {
+    font-size: 15px;
+    line-height: 21px;
+  }
   .info-desktop {
     display: none;
   }
@@ -966,13 +1014,31 @@ body {
     margin: 11% 0 0 33%;
   }
   .join__button {
-    margin-left: 15%;
+    margin-left: -7%;
+  }
+  .programm__img {
+    height: 260px;
+  }
+  .programm__img-mobg {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .programm__img-mob {
+    position: relative;
+    margin-top: -150px;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .join__button {
-    margin-left: 8%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
