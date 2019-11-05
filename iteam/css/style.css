@@ -1032,6 +1032,10 @@ body {
     position: relative;
     margin-top: -150px;
   }
+  .info__button button {
+    width: 191px;
+    height: 55px;
+  }
 }
 
 @media only screen and (max-width: 414px) {
