@@ -26,6 +26,7 @@
       height: 50px;
       transform: translateY(-50%);
       /* background: rgba(0, 0, 0, .5); */
+      
     }
 
     .slider__control:hover,

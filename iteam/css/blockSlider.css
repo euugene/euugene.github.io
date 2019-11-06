@@ -117,9 +117,9 @@ ol,
     }
 
     /* индикаторы слайдера */
-/* 
+
     .slide__indicators {
-      position: absolute;
+      /* position: absolute; */
       right: 0;
       bottom:90%;
       left: 0;
@@ -142,7 +142,7 @@ ol,
       margin-left: 3px;
       text-indent: -999px;
       cursor: pointer;
-      background-color: red;
+      background-color: #E1DCFD;
       border-radius: 6px;
       top:0
     }
@@ -168,8 +168,8 @@ ol,
     }
 
     .slide__indicator_active {
-      background-color: #fff;
-    } */
+      background-color: red;
+    }
 
     img {
       display: inline-block;

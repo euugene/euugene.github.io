@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="./css/lightslider.css"/>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="./js/slick.js"></script>
           
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     
@@ -58,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div class="header__logo ">
-                        <img src="./img/logo.png" alt="logo">
+                        <img src="./img/logo.svg" alt="logo">
                     </div>
                     <div class="header__title">iteam - ещё больше<br> возможностей!</div>
                     <div class="header__text">iteam — это привилегированная программа лояльности<br
@@ -524,12 +525,7 @@
     <div id="slide" class="slide">
         <div class="container">
 
-            <ol class="slide__indicators">
-                <li class="slide__indicator slide__indicator_active" data-slider-to="0"></li>
-                <li class="slide__indicator" data-slider-to="1"></li>
-                <li class="slide__indicator" data-slider-to="2"></li>
-                <li class="slide__indicator" data-slider-to="3"></li>
-            </ol>
+            
 
             <div class="slide__items">
                 <div class="row">
@@ -544,10 +540,14 @@
                         </div>
 
                     </div>
-                    <div
-                        class="slide-item-pos1 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-8 offset-xs-2 col-10 offset-1 ">
+                    <div class="slide-item-pos1 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-8 offset-xs-2 col-10 offset-1 ">
+                        <ol class="slide__indicators">
+                            <li class="slide__indicator slide__indicator_active" data-slide-to="0"></li>
+                            <li class="slide__indicator" data-slide-to="1"></li>
+                            <li class="slide__indicator" data-slide-to="2"></li>
+                            <li class="slide__indicator" data-slide-to="3"></li>
+                        </ol>
                         <div class="slide__item slide__item_active">
-
                             <div id="white" class="statuses__white">
                                 <img src="./img/White.svg" alt="">
                             </div>
