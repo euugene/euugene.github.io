@@ -1,0 +1,9 @@
+@font-face {
+    font-family:'SF Pro Display';
+    src:  url('../fonts/SFProDisplay-Medium.ttf')
+    }
+    
+@font-face {
+    font-family:'SF Pro Display Bold';
+    src:  url('../fonts/SFProDisplay-Bold.ttf')
+    }

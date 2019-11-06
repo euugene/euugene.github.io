@@ -1,0 +1,152 @@
+/* Горизонтальный скрол white/red/black/platinum*/
+
+#slider {
+    width: 100%;
+    margin: 96px 0 93px 0;
+}
+/* Контейнер слайдера */
+.ui-slider {
+	position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 11px;   /* Задаем нужную ширину */
+	height: 11px;  /* и высоту */
+	/* background: url(../img/slider.png) no-repeat; картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+    cursor: pointer;
+    border: 2px solid #FF2424;
+    border-radius: 100px;
+    outline: none;
+	background: #ffffff;
+	display: block
+}
+.ui-slider .ui-slider-handle:hower{
+    outline: none
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+     height: 4px; /* задаем высоту согласно дизайна */
+    
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle { 
+	top: -5px;
+	margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min { 
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content { 
+	border: 1px solid #D4D4D4;
+    background: #D6DDEA;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header { 
+	border: 1px solid #D4D4D4;
+	background: #f00;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#slider {
+	float: left;
+	clear: left;
+/* width: 600px; */
+	/* margin: 15px; */
+}
+#slider .ui-slider-range { 
+	background: #ff0000; 
+}
+
+#slider .ui-state-default, .ui-widget-content .ui-state-default {
+	background: none;
+	background-color: #FFF;
+}
+.slider-pos{
+	display: flex;
+}
+.slider__bord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 28%;
+	background: #D6DDEA;
+	margin-top: -12px;
+}
+
+.slider__secBord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 55.5%;
+	background: #D6DDEA;
+	margin-top: -12px;
+}
+.slider__thirdBord{
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 14px;
+	/* left: 979.5px;
+	top: 1918px; */
+	margin-left: 83.2%;
+	background: #D6DDEA;
+	margin-top: -12px;
+}
+.statuses__first{
+	
+	position: absolute;
+	margin-left: 2.2%;
+	font-size: 15px;
+	line-height: 18px;
+	color: #D6DDEA;
+	margin-top: -50px;
+	display: none;
+}
+
+.statuses__sec{
+	position: absolute;
+	margin-left: 4%;
+	font-size: 15px;
+	line-height: 18px;
+	color: #D6DDEA;
+	margin-top: -50px;
+	display: none;
+
+}
+.statuses__third{
+	position: absolute;
+	margin-left: 82.8%;
+	font-size: 15px;
+	line-height: 18px;
+	color: #D6DDEA;
+	margin-top: -40px;
+	display: none;
+}
