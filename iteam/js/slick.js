@@ -86,7 +86,7 @@
                 useTransform: true,
                 variableWidth: false,
                 vertical: false,
-                verticalSwiping: false,
+                verticalSwiping: true,
                 waitForAnimate: true,
                 zIndex: 1000
             };
