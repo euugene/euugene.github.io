@@ -147,7 +147,136 @@
 </div>
 
 <div class="row footer-bottom d-flex justify-content-between">
-<p class="col-lg-8 col-sm-12 footer-text m-0">Copyright &copy; All rights reserved | Эндоферин по лучшей цене в Украине</p>
+<p class="col-lg-8 col-sm-12 footer-text m-0">Copyright &copy; All rights reserved | Эндоферин по лучшей цене в Украине</p> 
+<div align="center">
+	<div class="rating" itemscope="" itemtype="http://data-vocabulary.org/Review-aggregate">
+ <span itemprop="itemreviewed">Рейтинг</span> <strong itemprop="rating" style="color:white;" itemscope="" itemtype="http://data-vocabulary.org/Rating"><span itemprop="value">4.7</span> из <span itemprop="best">5</span></strong>:
+		<div class="rating-links">
+			 <a data-rating="1" style="color:gold;" ><i class="fa fa-star" style="cursor: pointer;"></i></a> <a data-rating="2" style="color: gold;" ><i class="fa fa-star" style="cursor: pointer;"></i></a> <a data-rating="3" style="color: gold;" ><i class="fa fa-star" style="cursor: pointer;"></i></a> <a data-rating="4" style="color: gold;" ><i class="fa fa-star" style="cursor: pointer;"></i></a> <a data-rating="5" style="color: gold;" ><i class="fa fa-star" style="cursor: pointer;"></i></a>
+		</div>
+		<p class="rating-text">
+ <span itemprop="votes">30</span> проголосовало
+		</p>
+	</div>
+	 <script type="text/javascript">
+
+
+
+$(document).ready(function(){
+
+$('.fa.fa-star').css('cursor', 'pointer');
+
+$(".rating .rating-links a").hover(
+//Hover in
+function() {
+
+var rating = $(this).attr('data-rating');
+
+if(rating) {
+
+//Звездочки попадающие в зону выделения
+for (var i = 0; i <= rating; i++) {
+
+if(i > 0){
+
+$( ".rating .rating-links a[data-rating='"+i+"']").css("color", "gold");
+
+}
+}
+
+//Звездочки не попадающие в зону выделения
+for (var i = 5; i > rating; i--) {
+
+$( ".rating .rating-links a[data-rating='"+i+"']").css("color", "#808080");
+
+}
+
+}
+
+
+},
+//Hover out
+function() {
+
+var rating = Math.ceil( $('[itemprop="value"]').text() );
+
+if(rating) {
+
+//Звездочки попадающие в зону выделения
+for (var i = rating; i > 0; i--) {
+$( ".rating .rating-links a[data-rating='"+i+"']").css("color", "gold");
+}
+
+
+//Звездочки не попадающие в зону выделения
+for (var i = 5; i > rating; i--) {
+
+$( ".rating .rating-links a[data-rating='"+i+"']").css("color", "#808080");
+
+}
+
+
+}
+}
+);
+
+
+$(".rating .rating-links a").click(function(){
+
+var rating = $(this).attr('data-rating');
+var choice = $(".rating .choice");
+
+//Нужно подтвердить выбраный голос
+if(rating){
+
+//Заменяем на свеже выбранный вариант
+if(choice.length > 0){
+$(choice).remove();
+}
+
+//Добавляем новый элемент
+$('.rating .rating-links').append('<div class="choice">Вы выбрали '+rating+' из 5 верно? <a class="confirm" style="cursor:pointer;">Да</a> <a class="deniede" style="cursor:pointer;">Нет</a></div>' );
+
+//назначаем для него события
+$('.rating .choice .confirm').click(function(){
+//Отправить голос на сервер
+$.ajax({
+type: "POST",
+url: window.location.origin+'/ajax/siterating.php',
+data: {'rating':rating},
+}).done(function(data) {
+if(Number(data)){
+$('[itemprop="value"]').text(data);
+$('[itemprop="votes"]').text(Number($('[itemprop="votes"]').text())+1);
+}
+}).fail(function(){
+$('[itemprop="votes"]').text(Number($('[itemprop="votes"]').text())+1);
+});
+//Вернуть все как было и не дать возможности проголосовать еще раз
+$(".rating .rating-links a").unbind();
+var choice = $(".rating .choice");
+$(choice).remove();
+
+});
+$('.rating .choice .deniede').click(function(){
+//Вернуть все на исходное
+var choice = $(".rating .choice");
+$(choice).remove();
+
+});
+
+
+
+}
+
+
+});
+
+});
+</script>
+</div>
+ <?endif;?>
+ 
 
 <div class="col-lg-4 col-sm-12 footer-social"></div>
 </div>
