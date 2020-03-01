@@ -95,6 +95,12 @@
         left: 20px;
         bottom: 20px;
     }
+    .shop__slider-content{
+        padding-left: 40px;
+    }
+    .shop__slider-price{
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 1340px) {
@@ -127,10 +133,12 @@
 }
 
 @media(max-width: 1250px) {
+
     .surf,
     .holder {
         padding: 70px 0 50px;
     }
+
     .slider-map {
         max-width: 1000px;
         min-height: 515px;
@@ -189,8 +197,33 @@
         top: 397px;
 
     }
+    .shop__slider-inner{
+        display: block;
+    }
+    .shop__slider-info{
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+    .shop__slider{
+        padding-left: 20px;
+    }
+    .surfboard__position--3 .surfboard-box__content{
+        left: 60px;
+    }
+    .surfboard__position--3 .surfboard-box__content::before{
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        right: auto;
+        left: -32px;
+        top: 50%;
+        content: "";
+    }
+
 
 }
+
 @media(max-width: 1150px) {
     .holder-slider__description {
         padding: 160px 0 0 20px;
@@ -203,11 +236,17 @@
 }
 
 @media(max-width: 1040px) {
-    
+
     .header__arrows {
         display: none;
     }
-
+    .quantity-button.quantity-up {
+        left: 25px;
+        
+    }
+    .quantity-button.quantity-down{
+        left: 0;
+    }
     .menu {
         background-color: #000;
         z-index: 22;
@@ -254,12 +293,17 @@
         line-height: 18px;
         padding-left: 65px;
     }
-
+    .headline-right {
+        font-size: 16px;
+        line-height: 18px;
+        padding-right: 65px;
+    }
     .slider-item__info-suptext {
         margin-bottom: 5px;
     }
 
-    .headline-left::before {
+    .headline-left::before,
+    .headline-right::before {
         width: 50px;
     }
 
@@ -294,37 +338,45 @@
     .surf__subtitle {
         padding-right: 20px;
     }
-    .holder-slider__info{
+
+    .holder-slider__info {
         display: block;
     }
-    .holder-slider__info-subtitle{
+
+    .holder-slider__info-subtitle {
         position: static;
         transform: rotate(0deg);
         height: auto;
         width: auto;
         text-align: left;
     }
-    .holder-slider__info-item{
+
+    .holder-slider__info-item {
         min-height: auto;
         margin-bottom: 20px;
         padding-left: 20px;
     }
-    
-    .holder-slider__info-title{
+
+    .holder-slider__info-title {
         padding-left: 0;
     }
-    .holder-slider__description{
+
+    .holder-slider__description {
         background-position: right -119px;
     }
-    .holder{ 
-        .title{
-            span{
-                padding-bottom: 0; 
+
+    .holder {
+        .title {
+            span {
+                padding-bottom: 0;
             }
         }
     }
-
+    .sleep .holder-slider__description{
+        background-position: right 10px;
+    }
 }
+
 @media(max-width: 1102px) {
     .slider-map {
         background-image: none;
@@ -394,7 +446,7 @@
 @media(max-width: 720px) {
     .title {
         span {
-            font-size: 100px;
+            font-size: 87px;
             padding-bottom: 80px;
             padding-left: 10px;
         }
@@ -407,13 +459,30 @@
     .surf-slider {
         padding-top: 65px;
     }
-    .holder-slider__head{
+
+    .holder-slider__head {
         min-height: 720px;
     }
-    .holder-slider__info-subtitle{
-        padding: 100px 20px 0 0;
+
+    .holder-slider__info-subtitle {
+        padding: 10px 20px 0 0;
     }
-   
+
+}
+
+
+@media(max-width: 640px) {
+    .holder-slider__description {
+        background-image: none !important;
+    }
+    .btn{
+        font-size: 30px;
+    }
+    
+
+    .holder-slider__subtitle {
+        padding: 132px 20px 0 0;
+    }
 }
 
 @media(max-width: 520px) {
@@ -424,6 +493,9 @@
     .subtitle__head {
         font-size: 32px;
         padding-right: 0px;
+    }
+    .description__head{
+        font-size: 32px;
     }
 }
 
@@ -456,6 +528,10 @@
     .header__title {
         display: none;
     }
+    .holder{
+        background-size:125px;
+    }
+
 }
 
 @media(max-width: 425px) {
@@ -465,8 +541,15 @@
         width: 250px;
         padding: 28px 15px 0;
     }
-
+    .holder-slider__description .description__head .holder__star-list{
+        position: static;
+        margin-left: -15px;
+    }
+    .holder-slider__description .description__head.description__head-sleep{
+        padding-right: 0;
+    }
 }
+
 @media(max-width: 374px) {
 
     .slider-map .slider-dots__content,
