@@ -19,6 +19,7 @@
 
         $(document).ready(function () {
         $('#fullPage').fullpage({
+            scrollOverflow: 'true',
             //Navigation
             autoScrolling: true,
             // navigation: true,
@@ -29,7 +30,7 @@
             //Menu
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
             menu: '#menu',
-            scrollOverflow: 'true',
+
             //animations
 
             afterLoad: function (index, nextIndex, direction) {
