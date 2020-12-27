@@ -18,11 +18,60 @@
     <div class="finder">
         <img src="./../../img/finder.svg">
     </div>
+    <div>
 
-    <div class="burger">
-        <img src="./../../img/burger.svg">
+        <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+        </div>
+
+
     </div>
 </header>
+<nav class="nav">
+    <div class="nav__items">
+        <div class="nav-items-box">
+            <a href="#firstScreen" class="main-nav">
+                <div class="nav__items-item item-1">
+                    <span>Главная</span>
+                </div>
+            </a>
+            <a href="#secondScreen" class="lineup-nav">
+                <div class="nav__items-item item-2">
+                    <span>Модельный ряд</span>
+                </div>
+            </a>
+        </div>
+        <div class="nav-item-box">
+            <a href="#thirdScreen" class="advantage-nav">
+                <div class="nav__items-item item-3">
+                    <span>преимущества</span>
+                </div>
+            </a>
+            <a href="#fourthScreen" class="contacts-nav">
+                <div class="nav__items-item item-4">
+                    <span>контакты</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="nav__info">
+        <div class="nav__info-email">
+            <div>Почта</div>
+            <div>info@prytec.com.ua</div>
+        </div>
+        <div class="nav__info-tel">
+            <div>Телефон</div>
+            <div>
+                <span>+38 044 229 94 53</span>
+                <span>+38 096 310 93 05</span>
+            </div>
+        </div>
+        <div class="nav__info-youtube">
+            <div>Youtube</div>
+            <div>PRYTEC INFO</div>
+        </div>
+    </div>
+</nav>
 <nav class="description">
     <div class="description__items">
         <a href="#thirdPageLexMex" class="description__items-type-size"><img src="./../../img/type-size.svg"></a>
@@ -269,11 +318,11 @@
                 <div class="content-4">
                     <div class="global__content-title accordion">
                         <div class="global__content-title row-1">Конструкция</div>
-                        <div class="global__content-title row-3">Водокольцевые вакуумные насосы серии MEX — LEX являются одноступенчатыми <br>высоковакуумными насоса-ми с изменяемым отверстием клапана. Простота и <br>эксплуатационная надёжность.</div>
+<!--                        <div class="global__content-title row-3">Водокольцевые вакуумные насосы серии MEX — LEX являются одноступенчатыми <br>высоковакуумными насоса-ми с изменяемым отверстием клапана. Простота и <br>эксплуатационная надёжность.</div>-->
                         <div class="trigger t1">
                             <input type="checkbox" id="checkbox-1" name="checkbox-1" />
-                            <label for="checkbox-1" class="checkbox">
-                                ОПИСАНИЕ <i></i>
+                            <label for="checkbox-1" class="checkbox"><i></i>
+                                ОПИСАНИЕ
                             </label>
                             <div class="content">
                                 MEX: Насос напрямую соединен с фланцем двигателя, моноблочное исполнение. Двигатели имеют стандарт-ную конструкцию B3/B5.
@@ -380,7 +429,9 @@
 <script src="../../js/lib.min.js"></script>
 <script src="../../js/animations.js"></script>
 
+<script src="../../js/hamburger.js"></script>
 <script src="../../js/lexMexPage.js"></script>
+<script src="../../js/main.js"></script>
 <script src="../../js/main.js"></script>
 
 </body>

@@ -238,9 +238,9 @@ $(document).ready(function () {
     $(".global__items-construction").click(function () {
         $(".content-4").css("display", 'block')
 
-        $(".content-1").css("display", 'block')
-        $(".content-3").css("display", 'block')
-        $(".content-2").css("display", 'block')
+        $(".content-1").css("display", 'none')
+        $(".content-3").css("display", 'none')
+        $(".content-2").css("display", 'none')
 
     })
 
