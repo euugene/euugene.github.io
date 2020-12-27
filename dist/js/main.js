@@ -1,5 +1,4 @@
 $('#checkbox-1').click(function () {
-    $(this).prop('checked', true)
     $('#checkbox-2').prop('checked', false)
     $('#checkbox-3').prop('checked', false)
     $('#checkbox-4').prop('checked', false)
