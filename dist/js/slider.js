@@ -26,7 +26,6 @@
             navigationPosition: 'left',
             // Design
             verticalCentered: false,
-            // parallax:true,
             //Menu
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
             menu: '#menu',
@@ -38,7 +37,6 @@
                 $isAnimatedFirst.eq(0).css('animation-delay', '.1s');
                 $isAnimatedFirst.eq(1).css('animation-delay', '.1s');
                 $isAnimatedFirst.eq(2).css('animation-delay', '.1s');
-                // $isAnimatedFirstSingle.addClass('animate__animated animate__zoomIn').css('animation-delay', '1.1s');
 
             },
             onLeave: function (index, nextIndex, direction) {
@@ -52,13 +50,7 @@
                     $isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '.1s');
 
 
-                    // $('.logo').css('display', 'none')
                 }
-                // else if (index == 2 && nextIndex == 1) {
-                //     $('.logo').css('display', 'block')
-                // }
-
-
                 // second animation
                 else if ((index == 1 || index == 2) && nextIndex == 3) {
                     $isAnimatedThird.eq(0).addClass('animate__animated animate__fadeIn').css('animation-delay', '.6s');
@@ -75,21 +67,12 @@
                         $(this).removeClass('lightSpeedIn').addClass('zoomOutDown');
                     });
                 } else if (index == 3  && nextIndex == 2)  {
-                    console.log('re')
                     $isAnimatedThirdOut.addClass('animate__animated animate__fadeOutDown');
                     $isAnimatedThirdOut.eq(0).css('animation-delay', '1.1s');
                     $isAnimatedThirdOut.eq(1).css('animation-delay', '.1s');
                     $isAnimatedThirdOut.eq(2).css('animation-delay', '.1s');
                     $isAnimatedThirdOutSingle.addClass('animated rollIn').css('animation-delay', '.1s');
                 }
-
-
-                // else if(index == 1 index == 3 || index == 4 ){
-                //     console.log('dsa')
-                //     $('.logo').css('display', 'none')
-                // }
-
-
             }
         })
     });

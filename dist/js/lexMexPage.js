@@ -148,8 +148,6 @@
         })
     });
 })(jQuery);
-// document.querySelector('#secondScreenLexMex').onwheel = e => e.stopPropagation();
-// disable scroll
 
 $('#secondScreenLexMex').bind('mousewheel', function(e){
     if(e.originalEvent.wheelDelta < 0) {

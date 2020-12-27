@@ -5,8 +5,8 @@
         nav: document.querySelector('nav'),
         firstLogo: document.querySelector('.logo'),
 
-        doToggle: function(e) {
-            e.preventDefault();
+        doToggle: function() {
+            // e.preventDefault();
 
             this.navToggle.classList.toggle('expanded');
             // this.nav.classList.toggle('expanded');

@@ -1,72 +1,36 @@
-// anchors
-// $(".main-nav").click(function(e) {
-//     e.preventDefault();
-//     var aid = $(this).attr("href");
-//     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-// });
-// $(".lineup-nav").click(function(e) {
-//     e.preventDefault();
-//     var aid = $(this).attr("href");
-//     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-// });
-// $(".advantage-nav").click(function(e) {
-//     e.preventDefault();
-//     var aid = $(this).attr("href");
-//     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-// });
-// $(".contacts-nav").click(function(e) {
-//     e.preventDefault();
-//     var aid = $(this).attr("href");
-//     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-// });
+$('#checkbox-1').click(function () {
+    $(this).prop('checked', true)
+    $('#checkbox-2').prop('checked', false)
+    $('#checkbox-3').prop('checked', false)
+    $('#checkbox-4').prop('checked', false)
+    if($('#checkbox-1').hasAttribute('checked')){
+        $(this).prop('checked', false)
+    } else  $(this).prop('checked', true)
+})
+$('#checkbox-2').click(function () {
 
-$(function () {
-    $('.main-nav').click(function () {
+    $('#checkbox-1').prop('checked', false)
+    $('#checkbox-3').prop('checked', false)
+    $('#checkbox-4').prop('checked', false)
+    if($('#checkbox-2').hasAttribute('checked')){
+        $(this).prop('checked', false)
+    } else  $(this).prop('checked', true)
+})
+$('#checkbox-3').click(function () {
 
+    $('#checkbox-1').prop('checked', false)
+    $('#checkbox-2').prop('checked', false)
+    $('#checkbox-4').prop('checked', false)
+    if($('#checkbox-3').hasAttribute('checked')){
+        $(this).prop('checked', false)
+    } else  $(this).prop('checked', true)
+})
+$('#checkbox-4').click(function () {
 
-        // if(!$('.menu-1').hasClass('active')){
-        //     $('.menu-1').addClass('active')
-        //     $('.menu-2').removeClass('active')
-        //     $('.menu-3').removeClass('active')
-        //     $('.menu-4').removeClass('active')
-        // }
-        $('html,body').animate({scrollTop: $('#firstScreen').offset().top}, 1000);
-        $('.menu-1').toggleClass('active')
-    });
-    $('.lineup-nav').click(function () {
-        $('html,body').animate({scrollTop: $('#secondScreen').offset().top}, 1000);
-        $('.menu-2').toggleClass('active')
-    });
-    $('.advantage-nav').click(function () {
-        $('html,body').animate({scrollTop: $('#thirdScreen').offset().top}, 1000);
-        $('.menu-3').toggleClass('active')
-    });
-    $('.contacts-nav').click(function () {
-        $('html,body').animate({scrollTop: $('#fourthScreen').offset().top}, 1000);
-        $('.menu-4').toggleClass('active')
-    });
-    // $(".sliding-link").click(function(e) {
-    //     e.preventDefault();
-    //     var aid = $(this).attr("href");
-    //     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-    // });
-//
-//
-//
-//     // $('.about-us').click(function () {
-//     //     $('html,body').animate({scrollTop: $('.team').offset().top}, 1000);
-//     // });
-//     // $('.contact-us-mobile').click(function () {
-//     //     $(".mobile-menu").toggleClass("mobile-menu__active");
-//     //     $(".menu-icon").toggleClass("clicked");
-//     //     $('html,body').animate({scrollTop: $('.contact').offset().top}, 1000);
-//     // });
-//     // $('.contact-us').click(function () {
-//     //     $('html,body').animate({scrollTop: $('.contact').offset().top}, 1000);
-//     // });
-//     //
-//     // $('.sign-in').click(function () {
-//     //     $('html,body').animate({scrollTop: $('.header').offset().top}, 1000);
-//     // });
-//
-});
+    $('#checkbox-1').prop('checked', false)
+    $('#checkbox-2').prop('checked', false)
+    $('#checkbox-3').prop('checked', false)
+    if($('#checkbox-4').hasAttribute('checked')){
+     $('#checkbox-4').prop('checked', false)
+    } else  $(this).prop('checked', true)
+})
