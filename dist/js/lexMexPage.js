@@ -96,6 +96,19 @@
             $(".global__items-construction").css('background-color', 'rgba(130,136,142,0.5)')
         }
     )
+// set bg color for bottom menu after click on description menu
+    $('.description__items-construction').click(function () {
+        $(".global__items-construction").css('background-color', '#C02448')
+    })
+    $('.description__items-expl').click(function () {
+        $(".global__items-expl").css('background-color', '#C02448')
+    })
+    $('.description__items-description').click(function () {
+        $(".global__items-description").css('background-color', '#C02448')
+    })
+    $('.description__items-type-size').click(function () {
+        $(".global__items-type-size").css('background-color', '#C02448')
+    })
     'use strict';
     var $isAnimatedFirst = $('.header-sec .is-animated'),
         $isAnimatedFirstSingle = $('.header-sec .is-animated__single'),
@@ -115,6 +128,7 @@
     $(document).ready(function () {
         $('#fullPageLexMex').fullpage({
             //Navigation
+            scrollOverflow: true,
             autoScrolling: true,
             navigationPosition: 'left',
             // Design
@@ -131,16 +145,29 @@
                 $isAnimatedFirst.eq(1).css('animation-delay', '.1s');
                 $isAnimatedFirst.eq(2).css('animation-delay', '.1s');
                 // $isAnimatedFirstSingle.addClass('animate__animated animate__zoomIn').css('animation-delay', '1.1s');
-
+                if(index === 'thirdPageLexMex'){
+                    $('.description').css('display', 'none')
+                } else if(index === 'firstPageLexMex'){
+                    $('.description').css('display', 'none')
+                }
+                // $('.description__describe').click(function () {
+                //     index === 1 ? nextIndex = 2 : nextIndex = 'thirdPageLexMex'
+                //     console.log(nextIndex)
+                // })
             },
             onLeave: function (index, nextIndex, direction) {
-                if (index == 2 && nextIndex == 3) {
-                    console.log('re')
+                if (index == 1 && nextIndex == 2){
+                    $('.description').css('display', 'block')
+                } else if (index == 2 && nextIndex == 3) {
                     $(".description").css("display", 'none')
                 } else if (index == 3 && nextIndex == 2) {
-                    console.log('re')
                     $(".description").css("display", 'flex')
+                    $('.global__items-description').css('background-color', 'rgba(130,136,142,0.5)')
+                    $('.global__items-expl').css('background-color', 'rgba(130,136,142,0.5)')
+                    $('.global__items-type-size').css('background-color', 'rgba(130,136,142,0.5)')
+
                 }
+
             }
 
 
@@ -148,20 +175,28 @@
         })
     });
 })(jQuery);
-
-$('#secondScreenLexMex').bind('mousewheel', function(e){
-    if(e.originalEvent.wheelDelta < 0) {
-        e.stopPropagation()
-        console.log('Down');
-        return false;
-    }else {
-
-        console.log('Up');
-        return true;
+// для скролла
+$('#fullPageLexMex').bind('mousewheel', function(e){
+    if(e.originalEvent.wheelDelta < 0 || e.originalEvent.wheelDelta > 0){
+        return false
     }
+    // if(e.originalEvent.wheelDelta < 0 || e.originalEvent.wheelDelta > 0) {
+    //     e.stopPropagation()
+    //     console.log('Down');
+    //     return false;
+    // }else {
+    //
+    //     return false;
+    // }
 
     //prevent page fom scrolling
 
+});
+
+
+$(window).scroll(function(){
+    if($('#thirdPageLexMex').scrollTop()>0)
+        $('body').scrollTop(0);
 });
 $(document).ready(function () {
     $(".description__items-type-size").click(function () {
@@ -171,6 +206,7 @@ $(document).ready(function () {
         $(".content-3").css("display", 'none')
         $(".content-4").css("display", 'none')
         $(".description").css("display", 'none')
+        $(".description__items-type-size").css('background-color', '#C02448')
 
     })
     $(".description__items-description").click(function () {
@@ -207,16 +243,22 @@ $(document).ready(function () {
 
     })
     $(".global__items-type-size").click(function () {
+        $('.global__items-description').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-expl').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-construction').css('background-color', 'rgba(130,136,142,0.5)')
         $(".content-1").css("display", 'block')
 
         $(".content-2").css("display", 'none')
         $(".content-3").css("display", 'none')
         $(".content-4").css("display", 'none')
 
-
     })
 
     $(".global__items-description").click(function () {
+
+        $('.global__items-type-size').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-expl').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-construction').css('background-color', 'rgba(130,136,142,0.5)')
         $(".content-2").css("display", 'block')
 
         $(".content-1").css("display", 'none')
@@ -226,6 +268,10 @@ $(document).ready(function () {
 
     })
     $(".global__items-expl").click(function () {
+        $('.global__items-description').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-type-size').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-construction').css('background-color', 'rgba(130,136,142,0.5)')
+
         $(".content-3").css("display", 'block')
 
         $(".content-1").css("display", 'none')
@@ -234,8 +280,12 @@ $(document).ready(function () {
 
     })
     $(".global__items-construction").click(function () {
-        $(".content-4").css("display", 'block')
 
+        $('.global__items-description').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-expl').css('background-color', 'rgba(130,136,142,0.5)')
+        $('.global__items-type-size').css('background-color', 'rgba(130,136,142,0.5)')
+
+        $(".content-4").css("display", 'block')
         $(".content-1").css("display", 'none')
         $(".content-3").css("display", 'none')
         $(".content-2").css("display", 'none')

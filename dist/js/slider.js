@@ -19,7 +19,8 @@
 
         $(document).ready(function () {
         $('#fullPage').fullpage({
-            scrollOverflow: 'true',
+            scrollOverflow: true,
+
             //Navigation
             autoScrolling: true,
             // navigation: true,
@@ -77,3 +78,30 @@
         })
     });
 })(jQuery);
+$('#fullPage').bind('mousewheel', function(e) {
+    if (e.originalEvent.wheelDelta < 0 || e.originalEvent.wheelDelta > 0) {
+        return false
+    }
+})
+
+// mouse animation
+
+$(document).ready(function(){
+    $(".mouse_wheel").css('transition', '3s');
+    setInterval(()=>{
+        $(".mouse_wheel").attr('transform', 'translate(0, -18)');
+    },1000);
+    setInterval(() =>{
+        $(".mouse_wheel").attr('transform', 'translate(0, 30)');
+    },3000);
+    animBg();
+
+});
+function animBg() {
+    $(".header-partners__mouse").animate({
+        'bottom': '10',
+    }, 1500)
+        .animate({
+            'bottom': '130'
+        }, 1500, animBg);
+}
