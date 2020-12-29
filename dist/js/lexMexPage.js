@@ -145,10 +145,12 @@
                 $isAnimatedFirst.eq(1).css('animation-delay', '.1s');
                 $isAnimatedFirst.eq(2).css('animation-delay', '.1s');
                 // $isAnimatedFirstSingle.addClass('animate__animated animate__zoomIn').css('animation-delay', '1.1s');
-                if(index === 'thirdPageLexMex'){
+                if (index === 'thirdPageLexMex') {
                     $('.description').css('display', 'none')
-                } else if(index === 'firstPageLexMex'){
-                    $('.description').css('display', 'none')
+                } else if (index === 'firstPageLexMex') {
+                    if ($(window).width() < 1024) {
+                        $('.description').css('display', 'none')
+                    }
                 }
                 // $('.description__describe').click(function () {
                 //     index === 1 ? nextIndex = 2 : nextIndex = 'thirdPageLexMex'
@@ -156,8 +158,9 @@
                 // })
             },
             onLeave: function (index, nextIndex, direction) {
-                if (index == 1 && nextIndex == 2){
-                    $('.description').css('display', 'block')
+                if (index == 1 && nextIndex == 2) {
+
+                    $('.description').css('display', 'flex')
                 } else if (index == 2 && nextIndex == 3) {
                     $(".description").css("display", 'none')
                 } else if (index == 3 && nextIndex == 2) {
@@ -176,8 +179,8 @@
     });
 })(jQuery);
 // для скролла
-$('#fullPageLexMex').bind('mousewheel', function(e){
-    if(e.originalEvent.wheelDelta < 0 || e.originalEvent.wheelDelta > 0){
+$('#fullPageLexMex').bind('mousewheel', function (e) {
+    if (e.originalEvent.wheelDelta < 0 || e.originalEvent.wheelDelta > 0) {
         return false
     }
     // if(e.originalEvent.wheelDelta < 0 || e.originalEvent.wheelDelta > 0) {
@@ -194,8 +197,8 @@ $('#fullPageLexMex').bind('mousewheel', function(e){
 });
 
 
-$(window).scroll(function(){
-    if($('#thirdPageLexMex').scrollTop()>0)
+$(window).scroll(function () {
+    if ($('#thirdPageLexMex').scrollTop() > 0)
         $('body').scrollTop(0);
 });
 $(document).ready(function () {
